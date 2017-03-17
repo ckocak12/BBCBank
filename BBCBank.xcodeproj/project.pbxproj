@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		672556AC8FBDC0019FA5BA30 /* Pods_BBCBankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F54BBFDF30553E49336FA8C /* Pods_BBCBankTests.framework */; };
+		B7A88200DA4F54F8C469EED1 /* Pods_BBCBankUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3FA709489A1B0A376C44EE /* Pods_BBCBankUITests.framework */; };
 		B82919591E79308A006146ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82919581E79308A006146ED /* AppDelegate.swift */; };
 		B829195B1E79308A006146ED /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B829195A1E79308A006146ED /* RootViewController.swift */; };
 		B829195D1E79308A006146ED /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B829195C1E79308A006146ED /* DataViewController.swift */; };
@@ -16,6 +18,11 @@
 		B82919671E79308A006146ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82919651E79308A006146ED /* LaunchScreen.storyboard */; };
 		B82919721E79308A006146ED /* BBCBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82919711E79308A006146ED /* BBCBankTests.swift */; };
 		B829197D1E79308A006146ED /* BBCBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B829197C1E79308A006146ED /* BBCBankUITests.swift */; };
+		B88E52681E79398700BC4A35 /* icon_INGBank.png in Resources */ = {isa = PBXBuildFile; fileRef = B88E52651E79398700BC4A35 /* icon_INGBank.png */; };
+		B88E52691E79398700BC4A35 /* ING_Bank_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B88E52661E79398700BC4A35 /* ING_Bank_logo.jpg */; };
+		B88E526A1E79398700BC4A35 /* launch_INGBank.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B88E52671E79398700BC4A35 /* launch_INGBank.jpg */; };
+		B8986D761E7C0B14004913CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8986D751E7C0B14004913CE /* GoogleService-Info.plist */; };
+		F5EB48D6D3710F3002179E23 /* Pods_BBCBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29DCD21239E5FC994794031F /* Pods_BBCBank.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04C923E9C1F12D8E265CCFC9 /* Pods-BBCBankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBCBankTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BBCBankTests/Pods-BBCBankTests.release.xcconfig"; sourceTree = "<group>"; };
+		07F2AE33E8127EBB1A98AEB5 /* Pods-BBCBankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBCBankTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BBCBankTests/Pods-BBCBankTests.debug.xcconfig"; sourceTree = "<group>"; };
+		29DCD21239E5FC994794031F /* Pods_BBCBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BBCBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		366E869C0AC8BAD965C39BA9 /* Pods-BBCBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBCBank.release.xcconfig"; path = "Pods/Target Support Files/Pods-BBCBank/Pods-BBCBank.release.xcconfig"; sourceTree = "<group>"; };
+		539D66EAD4C62EBEADFE6B3E /* Pods-BBCBankUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBCBankUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BBCBankUITests/Pods-BBCBankUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5F54BBFDF30553E49336FA8C /* Pods_BBCBankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BBCBankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6333E34AE6E28875CBC42DA4 /* Pods-BBCBankUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBCBankUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BBCBankUITests/Pods-BBCBankUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E3FA709489A1B0A376C44EE /* Pods_BBCBankUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BBCBankUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B82919551E79308A006146ED /* BBCBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBCBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B82919581E79308A006146ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B829195A1E79308A006146ED /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +66,11 @@
 		B82919781E79308A006146ED /* BBCBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBCBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B829197C1E79308A006146ED /* BBCBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCBankUITests.swift; sourceTree = "<group>"; };
 		B829197E1E79308A006146ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B88E52651E79398700BC4A35 /* icon_INGBank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_INGBank.png; sourceTree = "<group>"; };
+		B88E52661E79398700BC4A35 /* ING_Bank_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ING_Bank_logo.jpg; sourceTree = "<group>"; };
+		B88E52671E79398700BC4A35 /* launch_INGBank.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch_INGBank.jpg; sourceTree = "<group>"; };
+		B8986D751E7C0B14004913CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE403F4799EF360C823852E1 /* Pods-BBCBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBCBank.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BBCBank/Pods-BBCBank.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5EB48D6D3710F3002179E23 /* Pods_BBCBank.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				672556AC8FBDC0019FA5BA30 /* Pods_BBCBankTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,19 +94,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7A88200DA4F54F8C469EED1 /* Pods_BBCBankUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B7D44CFBBF93B3915300D2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29DCD21239E5FC994794031F /* Pods_BBCBank.framework */,
+				5F54BBFDF30553E49336FA8C /* Pods_BBCBankTests.framework */,
+				7E3FA709489A1B0A376C44EE /* Pods_BBCBankUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53450C58F3818FC43B139EA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE403F4799EF360C823852E1 /* Pods-BBCBank.debug.xcconfig */,
+				366E869C0AC8BAD965C39BA9 /* Pods-BBCBank.release.xcconfig */,
+				07F2AE33E8127EBB1A98AEB5 /* Pods-BBCBankTests.debug.xcconfig */,
+				04C923E9C1F12D8E265CCFC9 /* Pods-BBCBankTests.release.xcconfig */,
+				6333E34AE6E28875CBC42DA4 /* Pods-BBCBankUITests.debug.xcconfig */,
+				539D66EAD4C62EBEADFE6B3E /* Pods-BBCBankUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B829194C1E79308A006146ED = {
 			isa = PBXGroup;
 			children = (
+				B88E52651E79398700BC4A35 /* icon_INGBank.png */,
+				B88E52661E79398700BC4A35 /* ING_Bank_logo.jpg */,
+				B88E52671E79398700BC4A35 /* launch_INGBank.jpg */,
 				B82919571E79308A006146ED /* BBCBank */,
 				B82919701E79308A006146ED /* BBCBankTests */,
 				B829197B1E79308A006146ED /* BBCBankUITests */,
 				B82919561E79308A006146ED /* Products */,
+				53450C58F3818FC43B139EA3 /* Pods */,
+				3B7D44CFBBF93B3915300D2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +159,7 @@
 				B82919601E79308A006146ED /* Main.storyboard */,
 				B82919631E79308A006146ED /* Assets.xcassets */,
 				B82919651E79308A006146ED /* LaunchScreen.storyboard */,
+				B8986D751E7C0B14004913CE /* GoogleService-Info.plist */,
 				B82919681E79308A006146ED /* Info.plist */,
 			);
 			path = BBCBank;
@@ -138,9 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B82919811E79308A006146ED /* Build configuration list for PBXNativeTarget "BBCBank" */;
 			buildPhases = (
+				D04B32DF5E5436884FE64C2C /* [CP] Check Pods Manifest.lock */,
 				B82919511E79308A006146ED /* Sources */,
 				B82919521E79308A006146ED /* Frameworks */,
 				B82919531E79308A006146ED /* Resources */,
+				4FE128D85C5B75FF28510950 /* [CP] Embed Pods Frameworks */,
+				257E77070BC668790B825D9F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,9 +210,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B82919841E79308A006146ED /* Build configuration list for PBXNativeTarget "BBCBankTests" */;
 			buildPhases = (
+				96CB73A57CA5401BFD906BAF /* [CP] Check Pods Manifest.lock */,
 				B82919691E79308A006146ED /* Sources */,
 				B829196A1E79308A006146ED /* Frameworks */,
 				B829196B1E79308A006146ED /* Resources */,
+				3AE4065BFCA6A83AE368CF46 /* [CP] Embed Pods Frameworks */,
+				8BD70A610A480A3E89AAC617 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,9 +231,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B82919871E79308A006146ED /* Build configuration list for PBXNativeTarget "BBCBankUITests" */;
 			buildPhases = (
+				D36A2D271BA3A6F6B586A56B /* [CP] Check Pods Manifest.lock */,
 				B82919741E79308A006146ED /* Sources */,
 				B82919751E79308A006146ED /* Frameworks */,
 				B82919761E79308A006146ED /* Resources */,
+				7ADA266EFFE729FDEDDEAC7C /* [CP] Embed Pods Frameworks */,
+				9D3426E13E58942CB04B1C99 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,7 +304,11 @@
 			files = (
 				B82919671E79308A006146ED /* LaunchScreen.storyboard in Resources */,
 				B82919641E79308A006146ED /* Assets.xcassets in Resources */,
+				B88E526A1E79398700BC4A35 /* launch_INGBank.jpg in Resources */,
 				B82919621E79308A006146ED /* Main.storyboard in Resources */,
+				B88E52681E79398700BC4A35 /* icon_INGBank.png in Resources */,
+				B88E52691E79398700BC4A35 /* ING_Bank_logo.jpg in Resources */,
+				B8986D761E7C0B14004913CE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +327,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		257E77070BC668790B825D9F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BBCBank/Pods-BBCBank-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AE4065BFCA6A83AE368CF46 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BBCBankTests/Pods-BBCBankTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FE128D85C5B75FF28510950 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BBCBank/Pods-BBCBank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7ADA266EFFE729FDEDDEAC7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BBCBankUITests/Pods-BBCBankUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BD70A610A480A3E89AAC617 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BBCBankTests/Pods-BBCBankTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96CB73A57CA5401BFD906BAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9D3426E13E58942CB04B1C99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BBCBankUITests/Pods-BBCBankUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D04B32DF5E5436884FE64C2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D36A2D271BA3A6F6B586A56B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B82919511E79308A006146ED /* Sources */ = {
@@ -421,6 +624,7 @@
 		};
 		B82919821E79308A006146ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE403F4799EF360C823852E1 /* Pods-BBCBank.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W99V84LM72;
@@ -434,6 +638,7 @@
 		};
 		B82919831E79308A006146ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 366E869C0AC8BAD965C39BA9 /* Pods-BBCBank.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W99V84LM72;
@@ -447,6 +652,7 @@
 		};
 		B82919851E79308A006146ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07F2AE33E8127EBB1A98AEB5 /* Pods-BBCBankTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -462,6 +668,7 @@
 		};
 		B82919861E79308A006146ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04C923E9C1F12D8E265CCFC9 /* Pods-BBCBankTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -477,6 +684,7 @@
 		};
 		B82919881E79308A006146ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6333E34AE6E28875CBC42DA4 /* Pods-BBCBankUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = W99V84LM72;
@@ -491,6 +699,7 @@
 		};
 		B82919891E79308A006146ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 539D66EAD4C62EBEADFE6B3E /* Pods-BBCBankUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = W99V84LM72;
@@ -522,6 +731,7 @@
 				B82919831E79308A006146ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B82919841E79308A006146ED /* Build configuration list for PBXNativeTarget "BBCBankTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +740,7 @@
 				B82919861E79308A006146ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B82919871E79308A006146ED /* Build configuration list for PBXNativeTarget "BBCBankUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +749,7 @@
 				B82919891E79308A006146ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

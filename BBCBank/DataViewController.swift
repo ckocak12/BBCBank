@@ -11,12 +11,6 @@ import Firebase
 
 class DataViewController: UIViewController, UIApplicationDelegate{
     
-    
-    
-
-    @IBOutlet weak var dataLabel: UILabel!
-    var dataObject: String = ""
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,52 +27,6 @@ class DataViewController: UIViewController, UIApplicationDelegate{
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 //        self.dataLabel!.text = dataObject
-    }
-    @IBOutlet weak var UserNameLabel: UILabel!
-    
-    @IBOutlet weak var UserNameTextField: UITextField!
-    
-    @IBOutlet weak var PasswordLabel: UILabel!
-    
-    @IBOutlet weak var PasswordTextField: UITextField!
-    
-    @IBOutlet weak var LoginButtonO: UIButton!
-    @IBOutlet weak var ATMLocatorButtonO: UIButton!
-    @IBOutlet weak var MobilePINButtonO: UIButton!
-    @IBOutlet weak var FavTransButtonO: UIButton!
-    
-    
-    @IBAction func LoginButton(_ sender: UIButton) {
-//        TODO: Implement
-      /**  let database = FIRDatabase.database().reference(fromURL:"https://bbcbank-b976a.firebaseio.com/")
-        let name = database.child ("Login").observe(<#T##eventType: FIRDataEventType##FIRDataEventType#>, andPreviousSiblingKeyWith: <#T##(FIRDataSnapshot, String?) -> Void#>)
-        let password = database.child ("Login").value(forKey: UserNameTextField.text!)**/
-        
-        let name = UserNameTextField.text! + "@bbc.com"
-        let password = PasswordTextField.text!
-        
-        print(name)
-        print(password)
-        
-        FIRAuth.auth()?.signIn(withEmail: name, password: password) { (user, error) in
-    
-        print(error)
-        print (user?.displayName) // firebase isim tutmadığı için bu null dönüyo
-        print(user?.email)
-        
-        }
-        
-    }
-    
-    @IBAction func ATMLocateButton(_ sender: UIButton) {
-//        TODO: Implement
-    }
-    @IBAction func MobilePINButton(_ sender: UIButton) {
-//        TODO: Implement
-    }
-    
-    @IBAction func FavTransButton(_ sender: UIButton) {
-//        TODO: Implement
     }
     
 

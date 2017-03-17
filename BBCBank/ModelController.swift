@@ -37,7 +37,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         }
 
         // Create a new view controller and pass suitable data.
-        let dataViewController = storyboard.instantiateViewController(withIdentifier: "DataViewController") as! DataViewController
+        let dataViewController = storyboard.instantiateViewController(withIdentifier: "LoginController") as! LoginController
         dataViewController.dataObject = self.pageData[index]
         return dataViewController
     }

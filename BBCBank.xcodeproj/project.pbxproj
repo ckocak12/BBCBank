@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		672556AC8FBDC0019FA5BA30 /* Pods_BBCBankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F54BBFDF30553E49336FA8C /* Pods_BBCBankTests.framework */; };
 		B7A88200DA4F54F8C469EED1 /* Pods_BBCBankUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3FA709489A1B0A376C44EE /* Pods_BBCBankUITests.framework */; };
+		B80C83971E7C4F3900165F0B /* MainPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80C83961E7C4F3900165F0B /* MainPageController.swift */; };
+		B80C83991E7C55F400165F0B /* MobilePINController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80C83981E7C55F400165F0B /* MobilePINController.swift */; };
 		B82919591E79308A006146ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82919581E79308A006146ED /* AppDelegate.swift */; };
-		B829195B1E79308A006146ED /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B829195A1E79308A006146ED /* RootViewController.swift */; };
-		B829195D1E79308A006146ED /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B829195C1E79308A006146ED /* DataViewController.swift */; };
-		B829195F1E79308A006146ED /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B829195E1E79308A006146ED /* ModelController.swift */; };
 		B82919621E79308A006146ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82919601E79308A006146ED /* Main.storyboard */; };
 		B82919641E79308A006146ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B82919631E79308A006146ED /* Assets.xcassets */; };
 		B82919671E79308A006146ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82919651E79308A006146ED /* LaunchScreen.storyboard */; };
 		B82919721E79308A006146ED /* BBCBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82919711E79308A006146ED /* BBCBankTests.swift */; };
 		B829197D1E79308A006146ED /* BBCBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B829197C1E79308A006146ED /* BBCBankUITests.swift */; };
+		B83D6E0E1E7C4ABD00CD3DE7 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83D6E0D1E7C4ABD00CD3DE7 /* LoginController.swift */; };
 		B88E52681E79398700BC4A35 /* icon_INGBank.png in Resources */ = {isa = PBXBuildFile; fileRef = B88E52651E79398700BC4A35 /* icon_INGBank.png */; };
 		B88E52691E79398700BC4A35 /* ING_Bank_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B88E52661E79398700BC4A35 /* ING_Bank_logo.jpg */; };
 		B88E526A1E79398700BC4A35 /* launch_INGBank.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B88E52671E79398700BC4A35 /* launch_INGBank.jpg */; };
@@ -51,11 +51,10 @@
 		5F54BBFDF30553E49336FA8C /* Pods_BBCBankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BBCBankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6333E34AE6E28875CBC42DA4 /* Pods-BBCBankUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBCBankUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BBCBankUITests/Pods-BBCBankUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7E3FA709489A1B0A376C44EE /* Pods_BBCBankUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BBCBankUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B80C83961E7C4F3900165F0B /* MainPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageController.swift; sourceTree = "<group>"; };
+		B80C83981E7C55F400165F0B /* MobilePINController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobilePINController.swift; sourceTree = "<group>"; };
 		B82919551E79308A006146ED /* BBCBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBCBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B82919581E79308A006146ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B829195A1E79308A006146ED /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		B829195C1E79308A006146ED /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		B829195E1E79308A006146ED /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		B82919611E79308A006146ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B82919631E79308A006146ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B82919661E79308A006146ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,6 +65,7 @@
 		B82919781E79308A006146ED /* BBCBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBCBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B829197C1E79308A006146ED /* BBCBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCBankUITests.swift; sourceTree = "<group>"; };
 		B829197E1E79308A006146ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B83D6E0D1E7C4ABD00CD3DE7 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		B88E52651E79398700BC4A35 /* icon_INGBank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_INGBank.png; sourceTree = "<group>"; };
 		B88E52661E79398700BC4A35 /* ING_Bank_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ING_Bank_logo.jpg; sourceTree = "<group>"; };
 		B88E52671E79398700BC4A35 /* launch_INGBank.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch_INGBank.jpg; sourceTree = "<group>"; };
@@ -153,9 +153,9 @@
 			isa = PBXGroup;
 			children = (
 				B82919581E79308A006146ED /* AppDelegate.swift */,
-				B829195A1E79308A006146ED /* RootViewController.swift */,
-				B829195C1E79308A006146ED /* DataViewController.swift */,
-				B829195E1E79308A006146ED /* ModelController.swift */,
+				B83D6E0D1E7C4ABD00CD3DE7 /* LoginController.swift */,
+				B80C83981E7C55F400165F0B /* MobilePINController.swift */,
+				B80C83961E7C4F3900165F0B /* MainPageController.swift */,
 				B82919601E79308A006146ED /* Main.storyboard */,
 				B82919631E79308A006146ED /* Assets.xcassets */,
 				B82919651E79308A006146ED /* LaunchScreen.storyboard */,
@@ -471,10 +471,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B829195B1E79308A006146ED /* RootViewController.swift in Sources */,
-				B829195F1E79308A006146ED /* ModelController.swift in Sources */,
-				B829195D1E79308A006146ED /* DataViewController.swift in Sources */,
+				B80C83971E7C4F3900165F0B /* MainPageController.swift in Sources */,
 				B82919591E79308A006146ED /* AppDelegate.swift in Sources */,
+				B83D6E0E1E7C4ABD00CD3DE7 /* LoginController.swift in Sources */,
+				B80C83991E7C55F400165F0B /* MobilePINController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

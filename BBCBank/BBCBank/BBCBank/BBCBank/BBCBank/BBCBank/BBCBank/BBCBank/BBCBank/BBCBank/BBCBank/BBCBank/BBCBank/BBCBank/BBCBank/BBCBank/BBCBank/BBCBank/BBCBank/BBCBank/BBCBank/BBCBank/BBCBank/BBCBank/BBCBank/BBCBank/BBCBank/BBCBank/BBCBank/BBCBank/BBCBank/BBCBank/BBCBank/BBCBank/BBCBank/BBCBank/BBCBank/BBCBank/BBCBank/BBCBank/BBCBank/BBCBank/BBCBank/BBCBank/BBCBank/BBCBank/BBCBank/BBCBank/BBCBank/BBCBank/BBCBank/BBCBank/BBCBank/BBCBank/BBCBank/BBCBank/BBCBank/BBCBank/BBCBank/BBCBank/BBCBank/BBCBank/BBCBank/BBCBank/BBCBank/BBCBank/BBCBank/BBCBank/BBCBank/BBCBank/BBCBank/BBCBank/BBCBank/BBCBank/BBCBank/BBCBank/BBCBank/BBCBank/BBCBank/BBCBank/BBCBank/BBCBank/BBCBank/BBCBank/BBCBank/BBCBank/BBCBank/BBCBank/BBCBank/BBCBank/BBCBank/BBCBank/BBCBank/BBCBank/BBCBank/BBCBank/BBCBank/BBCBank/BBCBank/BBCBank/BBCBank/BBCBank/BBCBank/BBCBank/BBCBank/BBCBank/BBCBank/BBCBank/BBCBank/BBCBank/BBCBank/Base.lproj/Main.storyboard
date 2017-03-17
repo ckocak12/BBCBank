@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0cD-vU-I8P">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Controller-->
+        <scene sceneID="vYQ-yv-fYm">
+            <objects>
+                <viewController id="0cD-vU-I8P" customClass="LoginController" customModule="BBCBank" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HIT-47-sS9"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Gr-m8-4Rg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ce3-fU-MyZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ING_Bank_logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OTV-yz-Nyx">
+                                <rect key="frame" x="76" y="55" width="223" height="57.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OTV-yz-Nyx" secondAttribute="height" multiplier="228:59" id="UVj-Ss-Pg7"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1u-3e-E5d">
+                                <rect key="frame" x="106" y="303" width="163" height="30"/>
+                                <color key="backgroundColor" red="0.92263883349999998" green="0.47328997931818645" blue="0.23578841254978675" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                <state key="normal" title="Giriş">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonClicked:" destination="0cD-vU-I8P" eventType="touchUpInside" id="IyG-44-ZBs"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="OtF-MJ-00g">
+                                <rect key="frame" x="16" y="152.5" width="343" height="100.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yenilikçi Bankacılığa Hoş Geldiniz!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJJ-mJ-f91">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                        <color key="textColor" red="0.92263883349999998" green="0.4732899793" blue="0.23578841249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kullanıcı Adınız" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7yj-IK-Wws">
+                                        <rect key="frame" x="0.0" y="28.5" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS-Italic" family="Trebuchet MS" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifreniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cYt-NF-fAb">
+                                        <rect key="frame" x="0.0" y="70.5" width="343" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS-Italic" family="Trebuchet MS" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="TJJ-mJ-f91" secondAttribute="trailing" id="6qH-fb-yIX"/>
+                                    <constraint firstAttribute="trailing" secondItem="cYt-NF-fAb" secondAttribute="trailing" id="7aX-ce-Y28"/>
+                                    <constraint firstAttribute="trailing" secondItem="7yj-IK-Wws" secondAttribute="trailing" id="EQY-6m-Nd8"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="6RR-9x-qhF">
+                                <rect key="frame" x="16" y="607" width="343" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2d-lC-SQQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="113.5" height="50"/>
+                                        <color key="backgroundColor" red="0.1084394306" green="0.11191776389999999" blue="0.28638809920000002" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="s2d-lC-SQQ" secondAttribute="height" multiplier="57:25" id="bgh-Pp-ITh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="12"/>
+                                        <state key="normal" title="Cep Şifre">
+                                            <color key="titleColor" red="0.10843943059444427" green="0.11191776394844055" blue="0.286388099193573" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="mobilePINClicked:" destination="0cD-vU-I8P" eventType="touchUpInside" id="mPj-TX-INc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaq-at-XYH">
+                                        <rect key="frame" x="114.5" y="0.0" width="114" height="50"/>
+                                        <color key="backgroundColor" red="0.1084394306" green="0.11191776389999999" blue="0.28638809920000002" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="12"/>
+                                        <state key="normal" title="Favori İşlemler">
+                                            <color key="titleColor" red="0.1084394306" green="0.11191776389999999" blue="0.28638809920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="favTransClicked:" destination="0cD-vU-I8P" eventType="touchUpInside" id="fZy-s4-TAX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Enw-II-RGH">
+                                        <rect key="frame" x="229.5" y="0.0" width="113.5" height="50"/>
+                                        <color key="backgroundColor" red="0.1084394306" green="0.11191776389999999" blue="0.28638809920000002" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="12"/>
+                                        <state key="normal" title="ATM Bulucu">
+                                            <color key="titleColor" red="0.1084394306" green="0.11191776389999999" blue="0.28638809920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ATMLocatorClicked:" destination="0cD-vU-I8P" eventType="touchUpInside" id="ezt-RN-WyQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="OtF-MJ-00g" secondAttribute="trailing" id="6eS-0w-yBr"/>
+                            <constraint firstItem="OtF-MJ-00g" firstAttribute="top" secondItem="OTV-yz-Nyx" secondAttribute="bottom" constant="40" id="FeE-Lm-EZ0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6RR-9x-qhF" secondAttribute="trailing" id="Nic-ii-qQi"/>
+                            <constraint firstItem="z1u-3e-E5d" firstAttribute="leading" secondItem="Ce3-fU-MyZ" secondAttribute="leadingMargin" constant="90" id="UiT-J3-udq"/>
+                            <constraint firstItem="6Gr-m8-4Rg" firstAttribute="top" secondItem="6RR-9x-qhF" secondAttribute="bottom" constant="10" id="YlL-dK-hbX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OTV-yz-Nyx" secondAttribute="trailing" constant="60" id="aBa-cv-GWi"/>
+                            <constraint firstItem="6RR-9x-qhF" firstAttribute="leading" secondItem="Ce3-fU-MyZ" secondAttribute="leadingMargin" id="bei-af-H01"/>
+                            <constraint firstItem="OTV-yz-Nyx" firstAttribute="top" secondItem="HIT-47-sS9" secondAttribute="bottom" constant="35" id="frR-P8-ycJ"/>
+                            <constraint firstItem="OtF-MJ-00g" firstAttribute="leading" secondItem="Ce3-fU-MyZ" secondAttribute="leadingMargin" id="kib-RZ-by8"/>
+                            <constraint firstItem="OTV-yz-Nyx" firstAttribute="leading" secondItem="Ce3-fU-MyZ" secondAttribute="leadingMargin" constant="60" id="pbW-2a-eEb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="z1u-3e-E5d" secondAttribute="trailing" constant="90" id="sWJ-Oa-oTK"/>
+                            <constraint firstItem="z1u-3e-E5d" firstAttribute="top" secondItem="OtF-MJ-00g" secondAttribute="bottom" constant="50" id="uuP-J9-tdj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ATMLocatorButton" destination="Enw-II-RGH" id="kht-Ng-AMq"/>
+                        <outlet property="Label" destination="TJJ-mJ-f91" id="Qsw-rk-Ecy"/>
+                        <outlet property="Logo" destination="OTV-yz-Nyx" id="TvG-MD-PuO"/>
+                        <outlet property="favTransButton" destination="oaq-at-XYH" id="3RH-4w-S0Z"/>
+                        <outlet property="loginButton" destination="z1u-3e-E5d" id="qU5-9X-yXd"/>
+                        <outlet property="mobilePINButton" destination="s2d-lC-SQQ" id="7Ve-Df-V8N"/>
+                        <outlet property="passwordField" destination="cYt-NF-fAb" id="edC-nl-y7W"/>
+                        <outlet property="userNameField" destination="7yj-IK-Wws" id="SML-wV-qOP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="01l-Wz-qGG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="-248"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ING_Bank_logo.jpg" width="1417" height="384"/>
+    </resources>
+</document>

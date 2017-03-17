@@ -155,6 +155,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ATMLocatorButtonO" destination="rvM-uQ-8Tw" id="Yez-r3-hK2"/>
+                        <outlet property="FavTransButtonO" destination="eqB-JC-VjU" id="aHo-DE-Bpa"/>
+                        <outlet property="LoginButtonO" destination="qXW-W5-4TJ" id="0AR-M7-PqL"/>
+                        <outlet property="MobilePINButtonO" destination="ATC-Dt-93r" id="zn0-z0-GvK"/>
                         <outlet property="PasswordLabel" destination="oC9-dy-Mbc" id="tHp-YB-EL9"/>
                         <outlet property="PasswordTextField" destination="OT4-f1-gus" id="PlN-xc-V0j"/>
                         <outlet property="UserNameLabel" destination="RCl-nZ-aUn" id="3Ag-DP-bvq"/>

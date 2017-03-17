@@ -42,13 +42,17 @@ class DataViewController: UIViewController, UIApplicationDelegate{
     
     @IBOutlet weak var PasswordTextField: UITextField!
     
+    @IBOutlet weak var LoginButtonO: UIButton!
+    @IBOutlet weak var ATMLocatorButtonO: UIButton!
+    @IBOutlet weak var MobilePINButtonO: UIButton!
+    @IBOutlet weak var FavTransButtonO: UIButton!
+    
+    
     @IBAction func LoginButton(_ sender: UIButton) {
 //        TODO: Implement
       /**  let database = FIRDatabase.database().reference(fromURL:"https://bbcbank-b976a.firebaseio.com/")
         let name = database.child ("Login").observe(<#T##eventType: FIRDataEventType##FIRDataEventType#>, andPreviousSiblingKeyWith: <#T##(FIRDataSnapshot, String?) -> Void#>)
-        let password = database.child ("Login").value(forKey: UserNameTextField.text!)
-        if (name == UserNameTextField.text! && password == PasswordTextField.text!) {
-        }**/
+        let password = database.child ("Login").value(forKey: UserNameTextField.text!)**/
         
         let name = UserNameTextField.text! + "@bbc.com"
         let password = PasswordTextField.text!

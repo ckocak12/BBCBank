@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZYx-A4-upQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZYx-A4-upQ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -106,6 +106,7 @@
                                         </state>
                                         <connections>
                                             <action selector="ATMLocatorClicked:" destination="0cD-vU-I8P" eventType="touchUpInside" id="ezt-RN-WyQ"/>
+                                            <segue destination="FeX-dq-8UC" kind="show" id="M7O-Gy-sOt"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -217,10 +218,55 @@
             </objects>
             <point key="canvasLocation" x="2807" y="548"/>
         </scene>
-        <!--Main Page Controller-->
+        <!--View Controller-->
+        <scene sceneID="pvO-EV-sh0">
+            <objects>
+                <viewController id="FeX-dq-8UC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AYk-Oc-87e"/>
+                        <viewControllerLayoutGuide type="bottom" id="DMH-Kf-i9V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p1y-Zy-GDM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9xD-2w-ljS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="DyU-Bh-kN0"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tt1-HE-w0j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3530" y="617"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cVk-Ko-qFV">
+            <objects>
+                <viewController id="fyl-sG-rsh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bF4-ci-QvD"/>
+                        <viewControllerLayoutGuide type="bottom" id="JO7-RS-xJR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="confirmPage" id="pBk-zE-S1U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nKU-Jd-VB0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4049" y="515"/>
+        </scene>
+        <!--Main Page-->
         <scene sceneID="4PG-FO-4xP">
             <objects>
-                <viewController storyboardIdentifier="mainPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EXU-B6-bUY" customClass="MainPageController" customModule="BBCBank" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EXU-B6-bUY" userLabel="Main Page" customClass="MainPageController" customModule="BBCBank" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TzP-he-7Gi"/>
                         <viewControllerLayoutGuide type="bottom" id="gAG-s8-ZYF"/>
@@ -229,25 +275,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FD-i9-XGF">
-                                <rect key="frame" x="319" y="28" width="33" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2TZ-o3-nzY">
+                                <rect key="frame" x="16" y="134" width="47" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Çıkış">
-                                    <color key="titleColor" red="0.92263883349999998" green="0.4732899793" blue="0.23578841249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is main page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qT-ae-bgO">
-                                <rect key="frame" x="121" y="288" width="133" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6Q-sK-wHr" userLabel="EFT">
+                                        <rect key="frame" x="0.0" y="0.0" width="47" height="30"/>
+                                        <state key="normal" title="EFT"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ky-wL-J2Z">
+                                        <rect key="frame" x="0.0" y="30" width="47" height="30"/>
+                                        <state key="normal" title="Havale"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="VFN-pT-YP9" userLabel="Main Page"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="zbc-tI-aXY" id="ejx-Aj-OzK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4xr-By-KYM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="zbc-tI-aXY">
+                    <connections>
+                        <outlet property="delegate" destination="EXU-B6-bUY" id="Icp-9w-l0U"/>
+                        <outlet property="searchContentsController" destination="EXU-B6-bUY" id="pUt-Vn-9ow"/>
+                        <outlet property="searchResultsDataSource" destination="EXU-B6-bUY" id="ZVm-cb-M33"/>
+                        <outlet property="searchResultsDelegate" destination="EXU-B6-bUY" id="CI2-dD-op1"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="3626.4000000000001" y="-239.73013493253376"/>
         </scene>

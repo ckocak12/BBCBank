@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61943C831E8309A000E39FE6 /* Confirm Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61943C821E8309A000E39FE6 /* Confirm Controller.swift */; };
 		672556AC8FBDC0019FA5BA30 /* Pods_BBCBankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F54BBFDF30553E49336FA8C /* Pods_BBCBankTests.framework */; };
 		B7A88200DA4F54F8C469EED1 /* Pods_BBCBankUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3FA709489A1B0A376C44EE /* Pods_BBCBankUITests.framework */; };
 		B80C83971E7C4F3900165F0B /* MainPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80C83961E7C4F3900165F0B /* MainPageController.swift */; };
@@ -49,6 +50,7 @@
 		366E869C0AC8BAD965C39BA9 /* Pods-BBCBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBCBank.release.xcconfig"; path = "Pods/Target Support Files/Pods-BBCBank/Pods-BBCBank.release.xcconfig"; sourceTree = "<group>"; };
 		539D66EAD4C62EBEADFE6B3E /* Pods-BBCBankUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBCBankUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BBCBankUITests/Pods-BBCBankUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5F54BBFDF30553E49336FA8C /* Pods_BBCBankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BBCBankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61943C821E8309A000E39FE6 /* Confirm Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Confirm Controller.swift"; sourceTree = "<group>"; };
 		6333E34AE6E28875CBC42DA4 /* Pods-BBCBankUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBCBankUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BBCBankUITests/Pods-BBCBankUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7E3FA709489A1B0A376C44EE /* Pods_BBCBankUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BBCBankUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80C83961E7C4F3900165F0B /* MainPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageController.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				B80C83981E7C55F400165F0B /* MobilePINController.swift */,
 				B80C83961E7C4F3900165F0B /* MainPageController.swift */,
 				B82919601E79308A006146ED /* Main.storyboard */,
+				61943C821E8309A000E39FE6 /* Confirm Controller.swift */,
 				B82919631E79308A006146ED /* Assets.xcassets */,
 				B82919651E79308A006146ED /* LaunchScreen.storyboard */,
 				B8986D751E7C0B14004913CE /* GoogleService-Info.plist */,
@@ -475,6 +478,7 @@
 				B82919591E79308A006146ED /* AppDelegate.swift in Sources */,
 				B83D6E0E1E7C4ABD00CD3DE7 /* LoginController.swift in Sources */,
 				B80C83991E7C55F400165F0B /* MobilePINController.swift in Sources */,
+				61943C831E8309A000E39FE6 /* Confirm Controller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,16 +10,41 @@ import UIKit
 
 class MobilePINController: UIViewController {
     
+    let theUser = User.sharedUser
+    
+    var storyBoard = UIStoryboard(name: "Main", bundle: nil)
+    
     //MARK: Outlets
     
+    @IBOutlet weak var allertLabel: UILabel!
     @IBOutlet weak var userNameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var PINButton: UIButton!
+    @IBOutlet weak var errorLabel: UILabel!
     
     //MARK: Actions
     
     @IBAction func GetPINClicked(_ sender: UIButton) {
-        //RANDOM GENERATOR HERE
+        
+        theUser.userName = userNameField.text
+        do {
+        let userPassword = try NSString(contentsOfFile: "/Users/cansukocak/Documents/Projects/XCode Projects/BBCBank/userData.txt",
+                                encoding: String.Encoding.utf8.rawValue)
+            if passwordField.text! == userPassword as String {
+                theUser.mobilePIN = Int(arc4random_uniform(UInt32(99999999)))
+            }
+            else {
+                if userNameField.text == "" || passwordField.text == "" {
+                    errorLabel.text = "Lütfen bilgileri eksiksiz giriniz."
+                }
+                else {
+                    errorLabel.text = "Kullanıcı adınızı ya da şifrenizi yanlış girdiniz."
+                }
+            }
+        }
+        catch {
+            print("Failed reading data.")
+        }
     }
     
 

@@ -19,6 +19,9 @@
 		B82919721E79308A006146ED /* BBCBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82919711E79308A006146ED /* BBCBankTests.swift */; };
 		B829197D1E79308A006146ED /* BBCBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B829197C1E79308A006146ED /* BBCBankUITests.swift */; };
 		B83D6E0E1E7C4ABD00CD3DE7 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83D6E0D1E7C4ABD00CD3DE7 /* LoginController.swift */; };
+		B842CC881E8B23610021E291 /* MobilePINRegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B842CC871E8B23610021E291 /* MobilePINRegisterController.swift */; };
+		B842CC8A1E8B25E00021E291 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B842CC891E8B25E00021E291 /* User.swift */; };
+		B842CC8C1E8B2E6E0021E291 /* ShowMobilePINController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B842CC8B1E8B2E6E0021E291 /* ShowMobilePINController.swift */; };
 		B88E52681E79398700BC4A35 /* icon_INGBank.png in Resources */ = {isa = PBXBuildFile; fileRef = B88E52651E79398700BC4A35 /* icon_INGBank.png */; };
 		B88E52691E79398700BC4A35 /* ING_Bank_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B88E52661E79398700BC4A35 /* ING_Bank_logo.jpg */; };
 		B88E526A1E79398700BC4A35 /* launch_INGBank.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B88E52671E79398700BC4A35 /* launch_INGBank.jpg */; };
@@ -68,6 +71,9 @@
 		B829197C1E79308A006146ED /* BBCBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCBankUITests.swift; sourceTree = "<group>"; };
 		B829197E1E79308A006146ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B83D6E0D1E7C4ABD00CD3DE7 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		B842CC871E8B23610021E291 /* MobilePINRegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobilePINRegisterController.swift; sourceTree = "<group>"; };
+		B842CC891E8B25E00021E291 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B842CC8B1E8B2E6E0021E291 /* ShowMobilePINController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowMobilePINController.swift; sourceTree = "<group>"; };
 		B88E52651E79398700BC4A35 /* icon_INGBank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_INGBank.png; sourceTree = "<group>"; };
 		B88E52661E79398700BC4A35 /* ING_Bank_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ING_Bank_logo.jpg; sourceTree = "<group>"; };
 		B88E52671E79398700BC4A35 /* launch_INGBank.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch_INGBank.jpg; sourceTree = "<group>"; };
@@ -158,8 +164,11 @@
 				B83D6E0D1E7C4ABD00CD3DE7 /* LoginController.swift */,
 				B80C83981E7C55F400165F0B /* MobilePINController.swift */,
 				B80C83961E7C4F3900165F0B /* MainPageController.swift */,
-				B82919601E79308A006146ED /* Main.storyboard */,
+				B842CC871E8B23610021E291 /* MobilePINRegisterController.swift */,
+				B842CC891E8B25E00021E291 /* User.swift */,
+				B842CC8B1E8B2E6E0021E291 /* ShowMobilePINController.swift */,
 				61943C821E8309A000E39FE6 /* Confirm Controller.swift */,
+				B82919601E79308A006146ED /* Main.storyboard */,
 				B82919631E79308A006146ED /* Assets.xcassets */,
 				B82919651E79308A006146ED /* LaunchScreen.storyboard */,
 				B8986D751E7C0B14004913CE /* GoogleService-Info.plist */,
@@ -474,11 +483,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B842CC881E8B23610021E291 /* MobilePINRegisterController.swift in Sources */,
 				B80C83971E7C4F3900165F0B /* MainPageController.swift in Sources */,
 				B82919591E79308A006146ED /* AppDelegate.swift in Sources */,
 				B83D6E0E1E7C4ABD00CD3DE7 /* LoginController.swift in Sources */,
+				B842CC8C1E8B2E6E0021E291 /* ShowMobilePINController.swift in Sources */,
 				B80C83991E7C55F400165F0B /* MobilePINController.swift in Sources */,
 				61943C831E8309A000E39FE6 /* Confirm Controller.swift in Sources */,
+				B842CC8A1E8B25E00021E291 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

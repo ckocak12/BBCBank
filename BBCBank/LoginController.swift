@@ -13,6 +13,8 @@ class LoginController: UIViewController, UIApplicationDelegate  {
     
     var storyBoardRef = UIStoryboard(name: "Main", bundle: nil)
     
+    let theUser = User.sharedUser
+    
     //MARK: Outlets
     @IBOutlet weak var Logo: UIImageView!
     @IBOutlet weak var Label: UILabel!
@@ -22,6 +24,7 @@ class LoginController: UIViewController, UIApplicationDelegate  {
     @IBOutlet weak var mobilePINButton: UIButton!
     @IBOutlet weak var favTransButton: UIButton!
     @IBOutlet weak var ATMLocatorButton: UIButton!
+    @IBOutlet weak var ErrorLabel: UILabel!
     
     //MARK: Actions
     
@@ -33,8 +36,9 @@ class LoginController: UIViewController, UIApplicationDelegate  {
         print(password)
         
         FIRAuth.auth()?.signIn(withEmail: name, password: password) { (user, error) in
-            
+            if self.theUser.mobilePIN == -1 {
             if error == nil {
+                self.theUser.userName = self.userNameField.text
              self.userNameField.text = ""
                 self.passwordField.text = ""
                 let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "mainPage") as! MainPageController
@@ -43,10 +47,34 @@ class LoginController: UIViewController, UIApplicationDelegate  {
                 self.present(nextPage, animated: true)
             }
             else {
-                //allert buraya
+                if self.userNameField.text == "" || self.passwordField.text == "" {
+                    self.ErrorLabel.text = "Lütfen bilgileri eksiksiz giriniz."
+                }
+                else {
+                    self.ErrorLabel.text = "Kullanıcı adınızı ya da şifrenizi hatalı girdiniz."
+                }
+            }
+        }
+            else {
+                if self.userNameField.text == self.theUser.userName && self.passwordField.text == String(self.theUser.mobilePIN) {
+                    let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "mainPage") as! MainPageController
+                    self.dismiss(animated: false, completion: nil)
+                    self.dismiss(animated: false, completion: nil)
+                    self.present(nextPage, animated: true)
+                }
+                else {
+                    if self.userNameField.text == "" || self.passwordField.text == "" {
+                        self.ErrorLabel.text = "Lütfen bilgileri eksiksiz giriniz."
+                    }
+                    else {
+                        self.ErrorLabel.text = "Kullanıcı adınızı ya da şifrenizi hatalı girdiniz."
+                    }
+
+                }
             }
         }
     }
+        
     
     @IBAction func mobilePINClicked(_ sender: UIButton) {
 //        mobile pin action will be implemented,

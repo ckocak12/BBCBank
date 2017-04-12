@@ -22,7 +22,7 @@ class ShowMobilePINController: UIViewController {
         super.viewDidLoad()
         mobilePINLabel.text = String(theUser.mobilePIN)
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(10), execute: {
             let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "loginPage")
             self.present(nextPage, animated: true)
         })

@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import Firebase
 
 class MobilePINRegisterController: UIViewController, UIApplicationDelegate {
     
     let theUser = User.sharedUser
-    
+    var storyBoardRef = UIStoryboard(name: "Main", bundle: nil)
+    let firebaseAuth = FIRAuth.auth()
     
     //MARK: Outlets
     
@@ -19,7 +21,7 @@ class MobilePINRegisterController: UIViewController, UIApplicationDelegate {
     @IBOutlet weak var rePasswordField: UITextField!
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
-    
+    @IBOutlet weak var logoutButton: UIButton!
     //MARK: Page Actions
     
     override func viewDidLoad() {
@@ -35,6 +37,17 @@ class MobilePINRegisterController: UIViewController, UIApplicationDelegate {
     
     //MARK: Actions
     
+    
+    @IBAction func logoutclicked(_ sender: UIButton) {
+        
+        do {
+            try firebaseAuth?.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+        
+    }
+    
     @IBAction func doneClicked(_ sender: UIButton) {
         if self.passwordField.text != self.rePasswordField.text {
             self.errorLabel.text = "Şifreler eşleşmiyor. Lütfen tekrar deneyiniz."
@@ -43,14 +56,16 @@ class MobilePINRegisterController: UIViewController, UIApplicationDelegate {
             
             do {
                 let fileName = "/Users/cansukocak/Documents/Projects/XCode Projects/BBCBank/userData.txt"
-                let writeData = /*theUser.userName! + "-" + */passwordField.text!
+                let writeData = /*theUser.userName + "-" + */passwordField.text!
                 try writeData.write(toFile: fileName, atomically: true, encoding: String.Encoding.utf8)
             }
                 catch _ as NSError {
                 print("Failed saving data")
                 }
             }
-            
+        
+        let nextPage = storyBoardRef.instantiateViewController(withIdentifier: "success")
+        present(nextPage, animated: true)
         }
     
     /*

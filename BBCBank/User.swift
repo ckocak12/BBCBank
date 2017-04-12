@@ -9,8 +9,17 @@
 import Foundation
 
 class User {
-    var userName: String?
-    var mobilePIN = -1
-    static let sharedUser = User()
     
+    static let sharedUser = User()
+    var userName = ""
+    var mobilePIN = -1
+    var userNameSurname = ""
+    var balance = 0.0
+    var customerNo = 0
+    
+    private init() {
+    }
+    
+        
+
 }

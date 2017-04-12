@@ -11,6 +11,7 @@ import UIKit
 class ShowMobilePINController: UIViewController {
     
     let theUser = User.sharedUser
+    let storyBoardRef = UIStoryboard(name: "Main", bundle: nil)
     
     //MARK: Outlets
     
@@ -20,12 +21,18 @@ class ShowMobilePINController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         mobilePINLabel.text = String(theUser.mobilePIN)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
+            let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "loginPage")
+            self.present(nextPage, animated: true)
+        })
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 
     /*

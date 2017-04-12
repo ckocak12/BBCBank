@@ -11,9 +11,10 @@ import Firebase
 
 class LoginController: UIViewController, UIApplicationDelegate  {
     
-    var storyBoardRef = UIStoryboard(name: "Main", bundle: nil)
+    //MARK: Global Variables
     
-    let theUser = User.sharedUser
+    let storyBoardRef = UIStoryboard(name: "Main", bundle: nil)
+    var databaseRef: FIRDatabaseReference!
     
     //MARK: Outlets
     @IBOutlet weak var Logo: UIImageView!
@@ -32,21 +33,24 @@ class LoginController: UIViewController, UIApplicationDelegate  {
         let name = userNameField.text! + "@bbc.com"
         let password = passwordField.text!
         
-        print(name)
-        print(password)
-        
         FIRAuth.auth()?.signIn(withEmail: name, password: password) { (user, error) in
-            if self.theUser.mobilePIN == -1 {
+            if User.sharedUser.mobilePIN == -1 {
             if error == nil {
-                self.theUser.userName = self.userNameField.text
-             self.userNameField.text = ""
-                self.passwordField.text = ""
-                let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "mainPage") as! MainPageController
-                self.dismiss(animated: false, completion: nil)
-                self.dismiss(animated: false, completion: nil)
-                self.present(nextPage, animated: true)
+                //MARK: Creating User from database
+                self.databaseRef = FIRDatabase.database().reference()
+                self.databaseRef.child("users").child(self.userNameField.text!).observeSingleEvent(of: .value, with: { (snapshot) in
+                    User.sharedUser.userName = self.userNameField.text!
+                    User.sharedUser.customerNo = (snapshot.value as? NSDictionary)?["customer_no"] as? Int ?? 0
+                    User.sharedUser.balance = (snapshot.value as? NSDictionary)?["balance"] as? Double ?? 0
+                    User.sharedUser.userNameSurname = (snapshot.value as? NSDictionary)?["name_surname"] as? String ?? ""
+                })
+                //MARK: Sending to next page
+                DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
+                    let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "mainPage") as! MainPageController
+                    self.present(nextPage, animated: true)
+                })
             }
-            else {
+            else { //MARK: Error conditions
                 if self.userNameField.text == "" || self.passwordField.text == "" {
                     self.ErrorLabel.text = "Lütfen bilgileri eksiksiz giriniz."
                 }
@@ -56,11 +60,11 @@ class LoginController: UIViewController, UIApplicationDelegate  {
             }
         }
             else {
-                if self.userNameField.text == self.theUser.userName && self.passwordField.text == String(self.theUser.mobilePIN) {
+                if self.userNameField.text == User.sharedUser.userName && self.passwordField.text == String(User.sharedUser.mobilePIN) {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
                     let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "mainPage") as! MainPageController
-                    self.dismiss(animated: false, completion: nil)
-                    self.dismiss(animated: false, completion: nil)
                     self.present(nextPage, animated: true)
+                    }) 
                 }
                 else {
                     if self.userNameField.text == "" || self.passwordField.text == "" {
@@ -92,8 +96,10 @@ class LoginController: UIViewController, UIApplicationDelegate  {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        FIRApp.configure()
-        // Do any additional setup after loading the view.
+        if FIRApp.defaultApp() == nil {
+            FIRApp.configure()
+        }
+            // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -103,7 +109,6 @@ class LoginController: UIViewController, UIApplicationDelegate  {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        //        self.dataLabel!.text = dataObject
     }
     
 

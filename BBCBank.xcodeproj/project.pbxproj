@@ -10,6 +10,8 @@
 		61943C831E8309A000E39FE6 /* Confirm Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61943C821E8309A000E39FE6 /* Confirm Controller.swift */; };
 		672556AC8FBDC0019FA5BA30 /* Pods_BBCBankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F54BBFDF30553E49336FA8C /* Pods_BBCBankTests.framework */; };
 		B7A88200DA4F54F8C469EED1 /* Pods_BBCBankUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3FA709489A1B0A376C44EE /* Pods_BBCBankUITests.framework */; };
+		B80337B21E8D93BC00EB618D /* SuccessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80337B11E8D93BC00EB618D /* SuccessController.swift */; };
+		B80337B61E8DBAA500EB618D /* onay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B80337B51E8DBAA500EB618D /* onay.jpg */; };
 		B80C83971E7C4F3900165F0B /* MainPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80C83961E7C4F3900165F0B /* MainPageController.swift */; };
 		B80C83991E7C55F400165F0B /* MobilePINController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80C83981E7C55F400165F0B /* MobilePINController.swift */; };
 		B82919591E79308A006146ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82919581E79308A006146ED /* AppDelegate.swift */; };
@@ -26,6 +28,7 @@
 		B88E52691E79398700BC4A35 /* ING_Bank_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B88E52661E79398700BC4A35 /* ING_Bank_logo.jpg */; };
 		B88E526A1E79398700BC4A35 /* launch_INGBank.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B88E52671E79398700BC4A35 /* launch_INGBank.jpg */; };
 		B8986D761E7C0B14004913CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8986D751E7C0B14004913CE /* GoogleService-Info.plist */; };
+		B8CC28AE1E99777D00BEE377 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = B8CC28AD1E99777D00BEE377 /* line.png */; };
 		F5EB48D6D3710F3002179E23 /* Pods_BBCBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29DCD21239E5FC994794031F /* Pods_BBCBank.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +59,8 @@
 		61943C821E8309A000E39FE6 /* Confirm Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Confirm Controller.swift"; sourceTree = "<group>"; };
 		6333E34AE6E28875CBC42DA4 /* Pods-BBCBankUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBCBankUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BBCBankUITests/Pods-BBCBankUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7E3FA709489A1B0A376C44EE /* Pods_BBCBankUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BBCBankUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B80337B11E8D93BC00EB618D /* SuccessController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessController.swift; sourceTree = "<group>"; };
+		B80337B51E8DBAA500EB618D /* onay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = onay.jpg; sourceTree = "<group>"; };
 		B80C83961E7C4F3900165F0B /* MainPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageController.swift; sourceTree = "<group>"; };
 		B80C83981E7C55F400165F0B /* MobilePINController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobilePINController.swift; sourceTree = "<group>"; };
 		B82919551E79308A006146ED /* BBCBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBCBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +83,7 @@
 		B88E52661E79398700BC4A35 /* ING_Bank_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ING_Bank_logo.jpg; sourceTree = "<group>"; };
 		B88E52671E79398700BC4A35 /* launch_INGBank.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch_INGBank.jpg; sourceTree = "<group>"; };
 		B8986D751E7C0B14004913CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B8CC28AD1E99777D00BEE377 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = line.png; path = BBCBank/line.png; sourceTree = "<group>"; };
 		CE403F4799EF360C823852E1 /* Pods-BBCBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBCBank.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BBCBank/Pods-BBCBank.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,9 +141,11 @@
 		B829194C1E79308A006146ED = {
 			isa = PBXGroup;
 			children = (
+				B80337B51E8DBAA500EB618D /* onay.jpg */,
 				B88E52651E79398700BC4A35 /* icon_INGBank.png */,
 				B88E52661E79398700BC4A35 /* ING_Bank_logo.jpg */,
 				B88E52671E79398700BC4A35 /* launch_INGBank.jpg */,
+				B8CC28AD1E99777D00BEE377 /* line.png */,
 				B82919571E79308A006146ED /* BBCBank */,
 				B82919701E79308A006146ED /* BBCBankTests */,
 				B829197B1E79308A006146ED /* BBCBankUITests */,
@@ -163,6 +171,7 @@
 				B82919581E79308A006146ED /* AppDelegate.swift */,
 				B83D6E0D1E7C4ABD00CD3DE7 /* LoginController.swift */,
 				B80C83981E7C55F400165F0B /* MobilePINController.swift */,
+				B80337B11E8D93BC00EB618D /* SuccessController.swift */,
 				B80C83961E7C4F3900165F0B /* MainPageController.swift */,
 				B842CC871E8B23610021E291 /* MobilePINRegisterController.swift */,
 				B842CC891E8B25E00021E291 /* User.swift */,
@@ -316,10 +325,12 @@
 			files = (
 				B82919671E79308A006146ED /* LaunchScreen.storyboard in Resources */,
 				B82919641E79308A006146ED /* Assets.xcassets in Resources */,
+				B8CC28AE1E99777D00BEE377 /* line.png in Resources */,
 				B88E526A1E79398700BC4A35 /* launch_INGBank.jpg in Resources */,
 				B82919621E79308A006146ED /* Main.storyboard in Resources */,
 				B88E52681E79398700BC4A35 /* icon_INGBank.png in Resources */,
 				B88E52691E79398700BC4A35 /* ING_Bank_logo.jpg in Resources */,
+				B80337B61E8DBAA500EB618D /* onay.jpg in Resources */,
 				B8986D761E7C0B14004913CE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +497,7 @@
 				B842CC881E8B23610021E291 /* MobilePINRegisterController.swift in Sources */,
 				B80C83971E7C4F3900165F0B /* MainPageController.swift in Sources */,
 				B82919591E79308A006146ED /* AppDelegate.swift in Sources */,
+				B80337B21E8D93BC00EB618D /* SuccessController.swift in Sources */,
 				B83D6E0E1E7C4ABD00CD3DE7 /* LoginController.swift in Sources */,
 				B842CC8C1E8B2E6E0021E291 /* ShowMobilePINController.swift in Sources */,
 				B80C83991E7C55F400165F0B /* MobilePINController.swift in Sources */,

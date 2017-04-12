@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0cD-vU-I8P">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0cD-vU-I8P">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -112,7 +112,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26H-HP-NhB">
-                                <rect key="frame" x="16" y="384" width="343" height="51"/>
+                                <rect key="frame" x="0.0" y="383" width="375" height="51"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="13"/>
                                 <color key="textColor" red="0.70002833549222798" green="0.16882693154920214" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -151,12 +151,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="01l-Wz-qGG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2807.1999999999998" y="-248.72563718140933"/>
+            <point key="canvasLocation" x="2806.5" y="-249.5"/>
         </scene>
         <!--Cep Şifre Giriş-->
         <scene sceneID="ptZ-ZR-qm5">
             <objects>
-                <viewController title="Cep Şifre Giriş" id="OZR-rj-7JK" customClass="MobilePINController" customModule="BBCBank" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mobilePin" title="Cep Şifre Giriş" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OZR-rj-7JK" customClass="MobilePINController" customModule="BBCBank" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="w5M-7J-v1h"/>
                         <viewControllerLayoutGuide type="bottom" id="f7W-u9-ceT"/>
@@ -166,28 +166,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OF2-ED-vp9">
-                                <rect key="frame" x="16" y="90" width="343" height="201"/>
+                                <rect key="frame" x="16" y="134" width="343" height="199.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="**Cep şifre kodunuz yoksa, almak için lütfen giriş yapınız." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ma0-lk-NUc">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="15.5"/>
-                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="13"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="14"/>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="12"/>
                                         <color key="textColor" red="0.1084394306" green="0.11191776389999999" blue="0.28638809920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kullanıcı Adınız" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ig-hh-gtT">
-                                        <rect key="frame" x="0.0" y="35.5" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="34" width="343" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="TrebuchetMS-Italic" family="Trebuchet MS" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cep Şifre Kodunuz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tsf-1O-Iwq">
-                                        <rect key="frame" x="0.0" y="85.5" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="84" width="343" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="TrebuchetMS-Italic" family="Trebuchet MS" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gbg-Zq-O2K">
-                                        <rect key="frame" x="0.0" y="135.5" width="343" height="29"/>
+                                        <rect key="frame" x="0.0" y="134" width="343" height="29"/>
                                         <color key="backgroundColor" red="0.92263883349999998" green="0.4732899793" blue="0.23578841249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="14"/>
                                         <state key="normal" title="Şifre Al">
@@ -195,11 +195,10 @@
                                         </state>
                                         <connections>
                                             <action selector="GetPINClicked:" destination="OZR-rj-7JK" eventType="touchUpInside" id="J1J-Ig-3Ld"/>
-                                            <segue destination="Cxa-Bt-tuJ" kind="show" id="wHa-47-IL1"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MwA-Z8-F31">
-                                        <rect key="frame" x="0.0" y="184.5" width="343" height="16.5"/>
+                                        <rect key="frame" x="0.0" y="183" width="343" height="16.5"/>
                                         <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
                                         <color key="textColor" red="0.70002833549999999" green="0.1688269315" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -214,7 +213,7 @@
                             <constraint firstItem="OF2-ED-vp9" firstAttribute="top" secondItem="w5M-7J-v1h" secondAttribute="bottom" constant="70" id="xC6-SE-nqP"/>
                         </constraints>
                     </view>
-                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="PINButton" destination="Gbg-Zq-O2K" id="Z5v-JX-tHL"/>
                         <outlet property="allertLabel" destination="ma0-lk-NUc" id="u66-fq-m7d"/>
@@ -240,7 +239,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="roj-EH-WFv">
-                                <rect key="frame" x="71" y="170" width="233" height="187.5"/>
+                                <rect key="frame" x="71" y="170" width="233" height="107"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cep Şifreniz: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5x-1u-x2b">
                                         <rect key="frame" x="0.0" y="0.0" width="233" height="20.5"/>
@@ -249,19 +248,11 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00000000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ag-nF-v9Q">
-                                        <rect key="frame" x="0.0" y="60.5" width="233" height="55"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                        <rect key="frame" x="0.0" y="60.5" width="233" height="46.5"/>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVO-BL-l5m">
-                                        <rect key="frame" x="44" y="155.5" width="145" height="32"/>
-                                        <color key="backgroundColor" red="0.92263883349999998" green="0.4732899793" blue="0.23578841249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
-                                        <state key="normal" title="Giriş Sayfasına Dön">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="g5x-1u-x2b" secondAttribute="trailing" id="9pT-3l-wab"/>
@@ -290,7 +281,7 @@
         <!--ATM Bulucu-->
         <scene sceneID="pvO-EV-sh0">
             <objects>
-                <viewController title="ATM Bulucu" id="FeX-dq-8UC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ATMLocator" title="ATM Bulucu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FeX-dq-8UC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AYk-Oc-87e"/>
                         <viewControllerLayoutGuide type="bottom" id="DMH-Kf-i9V"/>
@@ -299,25 +290,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is ATM Locator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXl-6P-F1l">
-                                <rect key="frame" x="121" y="296" width="151" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mNu-d6-22b">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="mNu-d6-22b" secondAttribute="trailing" id="IoU-vt-vrZ"/>
+                            <constraint firstItem="mNu-d6-22b" firstAttribute="top" secondItem="AYk-Oc-87e" secondAttribute="bottom" id="bNP-xf-OlF"/>
+                            <constraint firstItem="mNu-d6-22b" firstAttribute="leading" secondItem="p1y-Zy-GDM" secondAttribute="leadingMargin" id="sDo-q5-LWA"/>
+                            <constraint firstItem="DMH-Kf-i9V" firstAttribute="top" secondItem="mNu-d6-22b" secondAttribute="bottom" id="xPz-0j-Ibe"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tt1-HE-w0j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4175" y="512"/>
+            <point key="canvasLocation" x="4172" y="545.57721139430294"/>
         </scene>
         <!--Main Page-->
         <scene sceneID="4PG-FO-4xP">
             <objects>
-                <viewController storyboardIdentifier="mainPage" title="Main Page" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EXU-B6-bUY" userLabel="Main Page" customClass="MainPageController" customModule="BBCBank" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainPage" title="Hoşgeldiniz" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EXU-B6-bUY" userLabel="Main Page" customClass="MainPageController" customModule="BBCBank" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TzP-he-7Gi"/>
                         <viewControllerLayoutGuide type="bottom" id="gAG-s8-ZYF"/>
@@ -326,23 +319,104 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2TZ-o3-nzY">
-                                <rect key="frame" x="16" y="170" width="343" height="90"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ING_Bank_logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Dqj-2f-EIK">
+                                <rect key="frame" x="16" y="572" width="343" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="HWb-wo-sgg"/>
+                                    <constraint firstAttribute="width" constant="343" id="cI3-VJ-zP3"/>
+                                </constraints>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E00-GD-sIS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Hoşgeldiniz" id="k8D-K1-YFO">
+                                        <barButtonItem key="backBarButtonItem" title="Geri" id="AKa-EF-7vl"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tKv-9K-EmL">
+                                <rect key="frame" x="16" y="134" width="343" height="90.5"/>
                                 <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ubM-1v-wGK">
+                                        <rect key="frame" x="0.0" y="0.0" width="235" height="23.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sayın, " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7I-vT-pS0">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                                                <color key="textColor" red="0.1084394306" green="0.11191776389999999" blue="0.28638809920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kullanıcı Adı-Soyadı" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAS-tV-GDp">
+                                                <rect key="frame" x="60" y="0.0" width="175" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                                                <color key="textColor" red="0.1084394306" green="0.11191776389999999" blue="0.28638809920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vas-FD-Rn7">
+                                        <rect key="frame" x="0.0" y="33.5" width="276" height="23.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Müşteri Numaranız: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daP-Xf-OPS">
+                                                <rect key="frame" x="0.0" y="0.0" width="180.5" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                                                <color key="textColor" red="0.1084394306" green="0.11191776389999999" blue="0.28638809920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Müşteri No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbC-8Y-osm">
+                                                <rect key="frame" x="180.5" y="0.0" width="95.5" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                                                <color key="textColor" red="0.1084394306" green="0.11191776389999999" blue="0.28638809920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TeB-aW-oOR">
+                                        <rect key="frame" x="0.0" y="67" width="168" height="23.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bakiyeniz: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0h-f5-5tK">
+                                                <rect key="frame" x="0.0" y="0.0" width="98" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                                                <color key="textColor" red="0.1084394306" green="0.11191776389999999" blue="0.28638809920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3PY-ZM-0CF">
+                                                <rect key="frame" x="98" y="0.0" width="70" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                                                <color key="textColor" red="0.1084394306" green="0.11191776389999999" blue="0.28638809920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fHH-SV-26B">
+                                <rect key="frame" x="0.0" y="446" width="375" height="126"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6Q-sK-wHr" userLabel="EFT">
+                                        <rect key="frame" x="149" y="0.0" width="77" height="30"/>
+                                        <state key="normal" title="EFT/Havale"/>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line.png" translatesAutoresizingMaskIntoConstraints="NO" id="KNe-nw-guk">
+                                        <rect key="frame" x="0.0" y="30" width="375" height="18"/>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMb-B4-Q3V">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                        <rect key="frame" x="97" y="48" width="181" height="30"/>
                                         <state key="normal" title="Cep Şifre Kullanıcı Kodu Al"/>
                                         <connections>
                                             <segue destination="88y-Jr-nGV" kind="show" id="lyf-cQ-vUr"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6Q-sK-wHr" userLabel="EFT">
-                                        <rect key="frame" x="0.0" y="30" width="343" height="30"/>
-                                        <state key="normal" title="EFT"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ky-wL-J2Z">
-                                        <rect key="frame" x="0.0" y="60" width="343" height="30"/>
-                                        <state key="normal" title="Havale"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line.png" translatesAutoresizingMaskIntoConstraints="NO" id="i1A-zb-fqE">
+                                        <rect key="frame" x="0.0" y="78" width="375" height="18"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofw-iM-ZzR">
+                                        <rect key="frame" x="156" y="96" width="63" height="30"/>
+                                        <state key="normal" title="Çıkış Yap"/>
+                                        <connections>
+                                            <action selector="logOutButton:" destination="EXU-B6-bUY" eventType="touchUpInside" id="JNR-HM-w0w"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -350,18 +424,30 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.92263883349999998" green="0.4732899793" blue="0.23578841249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="2TZ-o3-nzY" secondAttribute="trailing" id="1zi-eX-CJc"/>
-                            <constraint firstItem="2TZ-o3-nzY" firstAttribute="leading" secondItem="EWF-bJ-DZN" secondAttribute="leadingMargin" id="ROd-Ae-DqW"/>
-                            <constraint firstItem="2TZ-o3-nzY" firstAttribute="top" secondItem="TzP-he-7Gi" secondAttribute="bottom" constant="150" id="scY-TC-DMI"/>
+                            <constraint firstItem="gAG-s8-ZYF" firstAttribute="top" secondItem="fHH-SV-26B" secondAttribute="bottom" constant="95" id="B7u-Yf-zth"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dqj-2f-EIK" secondAttribute="trailing" id="GA1-Wd-TBc"/>
+                            <constraint firstItem="fHH-SV-26B" firstAttribute="leading" secondItem="EWF-bJ-DZN" secondAttribute="leading" id="Or1-gV-hTI"/>
+                            <constraint firstItem="gAG-s8-ZYF" firstAttribute="top" secondItem="Dqj-2f-EIK" secondAttribute="bottom" constant="10" id="S0J-u6-hzv"/>
+                            <constraint firstAttribute="trailing" secondItem="fHH-SV-26B" secondAttribute="trailing" id="UXJ-50-rag"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tKv-9K-EmL" secondAttribute="trailing" id="X8O-Oc-9I8"/>
+                            <constraint firstItem="tKv-9K-EmL" firstAttribute="top" secondItem="TzP-he-7Gi" secondAttribute="bottom" constant="70" id="axQ-PC-1LO"/>
+                            <constraint firstItem="Dqj-2f-EIK" firstAttribute="leading" secondItem="EWF-bJ-DZN" secondAttribute="leadingMargin" id="cXf-Iq-aLb"/>
+                            <constraint firstItem="tKv-9K-EmL" firstAttribute="leading" secondItem="EWF-bJ-DZN" secondAttribute="leadingMargin" id="lDt-Ja-PQq"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="UserNameSurname" destination="LAS-tV-GDp" id="paO-EG-qGk"/>
+                        <outlet property="customerNo" destination="IbC-8Y-osm" id="nRt-Ab-qZr"/>
+                        <outlet property="logOut" destination="Ofw-iM-ZzR" id="13l-Qo-vdZ"/>
+                        <outlet property="userBalance" destination="3PY-ZM-0CF" id="PKK-Ao-wte"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4xr-By-KYM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3497" y="-251"/>
+            <point key="canvasLocation" x="3496.8000000000002" y="-251.42428785607197"/>
         </scene>
         <!--Cep Şifre Kayıt-->
         <scene sceneID="Yip-dU-Kq7">
@@ -376,7 +462,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="yuD-SA-Uza">
-                                <rect key="frame" x="16" y="120" width="343" height="172"/>
+                                <rect key="frame" x="16" y="164" width="343" height="172"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifre Giriniz" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M1Q-PN-MBG">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
@@ -412,11 +498,19 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7J9-yG-z9n">
-                                <rect key="frame" x="16" y="382" width="343" height="46"/>
+                                <rect key="frame" x="16" y="426" width="343" height="46"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="13"/>
                                 <color key="textColor" red="0.70002833549999999" green="0.1688269315" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrF-nh-fog">
+                                <rect key="frame" x="312" y="41" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutclicked:" destination="88y-Jr-nGV" eventType="touchUpInside" id="9mV-CD-In2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -431,6 +525,7 @@
                     <connections>
                         <outlet property="doneButton" destination="fGR-Gz-ogi" id="lU4-qg-qIi"/>
                         <outlet property="errorLabel" destination="7J9-yG-z9n" id="y2Z-Wn-hXM"/>
+                        <outlet property="logoutButton" destination="IrF-nh-fog" id="R4d-TO-23O"/>
                         <outlet property="passwordField" destination="M1Q-PN-MBG" id="4Nc-GS-kyO"/>
                         <outlet property="rePasswordField" destination="cv1-9T-VpI" id="MGr-Ns-c26"/>
                     </connections>
@@ -439,9 +534,56 @@
             </objects>
             <point key="canvasLocation" x="4150" y="-251"/>
         </scene>
+        <!--Success Controller-->
+        <scene sceneID="lRC-RT-Cdj">
+            <objects>
+                <viewController storyboardIdentifier="success" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9p3-9z-61H" customClass="SuccessController" customModule="BBCBank" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ELF-RM-H83"/>
+                        <viewControllerLayoutGuide type="bottom" id="TWv-ZV-4rh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nQr-N4-HnL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="qQQ-5g-ahW">
+                                <rect key="frame" x="16" y="140" width="343" height="285"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onay.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lVL-cM-hke">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="225"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İşleminiz başarıyla gerçekleşti." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpB-b3-n4G">
+                                        <rect key="frame" x="0.0" y="265" width="343" height="20"/>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="dpB-b3-n4G" secondAttribute="trailing" id="91h-w2-nSe"/>
+                                    <constraint firstAttribute="trailing" secondItem="lVL-cM-hke" secondAttribute="trailing" id="9AS-2V-KIq"/>
+                                    <constraint firstItem="lVL-cM-hke" firstAttribute="leading" secondItem="qQQ-5g-ahW" secondAttribute="leading" id="DPe-0X-fvP"/>
+                                    <constraint firstItem="dpB-b3-n4G" firstAttribute="leading" secondItem="qQQ-5g-ahW" secondAttribute="leading" id="bT3-y4-nJy"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qQQ-5g-ahW" firstAttribute="top" secondItem="ELF-RM-H83" secondAttribute="bottom" constant="120" id="AEm-ow-mOY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qQQ-5g-ahW" secondAttribute="trailing" id="Pfq-7a-zE9"/>
+                            <constraint firstItem="qQQ-5g-ahW" firstAttribute="leading" secondItem="nQr-N4-HnL" secondAttribute="leadingMargin" id="zCf-iL-Btl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qHF-sO-dmm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4790" y="-251"/>
+        </scene>
     </scenes>
     <resources>
         <image name="ING_Bank_logo.jpg" width="1417" height="384"/>
+        <image name="line.png" width="398" height="18"/>
+        <image name="onay.jpg" width="225" height="225"/>
     </resources>
     <color key="tintColor" red="0.92263883349999998" green="0.4732899793" blue="0.23578841249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>

@@ -11,8 +11,7 @@ import UIKit
 class MobilePINController: UIViewController {
     
     let theUser = User.sharedUser
-    
-    var storyBoard = UIStoryboard(name: "Main", bundle: nil)
+    let storyBoardRef = UIStoryboard(name: "Main", bundle: nil)
     
     //MARK: Outlets
     
@@ -26,12 +25,15 @@ class MobilePINController: UIViewController {
     
     @IBAction func GetPINClicked(_ sender: UIButton) {
         
-        theUser.userName = userNameField.text
+        theUser.userName = userNameField.text!
         do {
         let userPassword = try NSString(contentsOfFile: "/Users/cansukocak/Documents/Projects/XCode Projects/BBCBank/userData.txt",
                                 encoding: String.Encoding.utf8.rawValue)
             if passwordField.text! == userPassword as String {
                 theUser.mobilePIN = Int(arc4random_uniform(UInt32(99999999)))
+                let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "showPIN")
+                present(nextPage, animated: true)
+                
             }
             else {
                 if userNameField.text == "" || passwordField.text == "" {

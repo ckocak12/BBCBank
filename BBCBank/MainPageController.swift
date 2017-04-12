@@ -7,13 +7,39 @@
 //
 
 import UIKit
+import Firebase
 
 class MainPageController: UIViewController {
+    
+    let theUser = User.sharedUser
+    let firebaseAuth = FIRAuth.auth()
+    let storyBoardRef = UIStoryboard(name: "Main", bundle: nil)
+    
+    //MARK: Outlets
+    
+    @IBOutlet weak var UserNameSurname: UILabel!
+    @IBOutlet weak var userBalance: UILabel!
+    @IBOutlet weak var customerNo: UILabel!
+    @IBOutlet weak var logOut: UIButton!
+    
+    
+    @IBAction func logOutButton(_ sender: UIButton) {
+        do {
+            try firebaseAuth?.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+        let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "loginPage") as! LoginController
+        self.present(nextPage, animated: true)
+    }
+    
 
+    //MARK: Page Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        UserNameSurname.text = self.theUser.userNameSurname
+        userBalance.text = String(describing: self.theUser.balance) + " TL"
+        customerNo.text = String(self.theUser.customerNo)
     }
 
     override func didReceiveMemoryWarning() {

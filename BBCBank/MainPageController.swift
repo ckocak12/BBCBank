@@ -26,11 +26,12 @@ class MainPageController: UIViewController {
     @IBAction func logOutButton(_ sender: UIButton) {
         do {
             try firebaseAuth?.signOut()
+            //MARK: - Send to login page
+            let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "loginPage") as! LoginController
+            self.present(nextPage, animated: true)
         } catch let signOutError as NSError {
             print ("Error signing out: %@", signOutError)
         }
-        let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "loginPage") as! LoginController
-        self.present(nextPage, animated: true)
     }
     
 

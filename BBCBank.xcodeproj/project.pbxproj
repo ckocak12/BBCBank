@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		61943C831E8309A000E39FE6 /* Confirm Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61943C821E8309A000E39FE6 /* Confirm Controller.swift */; };
 		672556AC8FBDC0019FA5BA30 /* Pods_BBCBankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F54BBFDF30553E49336FA8C /* Pods_BBCBankTests.framework */; };
 		B7A88200DA4F54F8C469EED1 /* Pods_BBCBankUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3FA709489A1B0A376C44EE /* Pods_BBCBankUITests.framework */; };
 		B80337B21E8D93BC00EB618D /* SuccessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80337B11E8D93BC00EB618D /* SuccessController.swift */; };
@@ -20,6 +19,9 @@
 		B82919671E79308A006146ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B82919651E79308A006146ED /* LaunchScreen.storyboard */; };
 		B82919721E79308A006146ED /* BBCBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82919711E79308A006146ED /* BBCBankTests.swift */; };
 		B829197D1E79308A006146ED /* BBCBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B829197C1E79308A006146ED /* BBCBankUITests.swift */; };
+		B83807CB1E9E804A006C1FF4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83807CA1E9E804A006C1FF4 /* MapKit.framework */; };
+		B83807CD1E9E8D0A006C1FF4 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83807CC1E9E8D0A006C1FF4 /* Intents.framework */; };
+		B83807DD1E9E8F38006C1FF4 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83807DC1E9E8F38006C1FF4 /* IntentsUI.framework */; };
 		B83D6E0E1E7C4ABD00CD3DE7 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83D6E0D1E7C4ABD00CD3DE7 /* LoginController.swift */; };
 		B842CC881E8B23610021E291 /* MobilePINRegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B842CC871E8B23610021E291 /* MobilePINRegisterController.swift */; };
 		B842CC8A1E8B25E00021E291 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B842CC891E8B25E00021E291 /* User.swift */; };
@@ -28,6 +30,15 @@
 		B88E52691E79398700BC4A35 /* ING_Bank_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B88E52661E79398700BC4A35 /* ING_Bank_logo.jpg */; };
 		B88E526A1E79398700BC4A35 /* launch_INGBank.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B88E52671E79398700BC4A35 /* launch_INGBank.jpg */; };
 		B8986D761E7C0B14004913CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8986D751E7C0B14004913CE /* GoogleService-Info.plist */; };
+		B8A819A31E9E944A0016B995 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A819A21E9E944A0016B995 /* IntentHandler.swift */; };
+		B8A819AA1E9E944A0016B995 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83807DC1E9E8F38006C1FF4 /* IntentsUI.framework */; };
+		B8A819AD1E9E944A0016B995 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A819AC1E9E944A0016B995 /* IntentViewController.swift */; };
+		B8A819B01E9E944A0016B995 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8A819AE1E9E944A0016B995 /* MainInterface.storyboard */; };
+		B8A819B41E9E944A0016B995 /* SiriExtUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B8A819A91E9E944A0016B995 /* SiriExtUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B8A819B71E9E944A0016B995 /* SiriExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B8A819A01E9E944A0016B995 /* SiriExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B8C9256A1EA4086C0076D0A2 /* RemittanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C925691EA4086C0076D0A2 /* RemittanceController.swift */; };
+		B8C9256C1EA40F900076D0A2 /* ConfirmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C9256B1EA40F900076D0A2 /* ConfirmController.swift */; };
+		B8C9256E1EA4116C0076D0A2 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C9256D1EA4116C0076D0A2 /* Transaction.swift */; };
 		B8CC28AE1E99777D00BEE377 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = B8CC28AD1E99777D00BEE377 /* line.png */; };
 		F5EB48D6D3710F3002179E23 /* Pods_BBCBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29DCD21239E5FC994794031F /* Pods_BBCBank.framework */; };
 /* End PBXBuildFile section */
@@ -47,7 +58,36 @@
 			remoteGlobalIDString = B82919541E79308A006146ED;
 			remoteInfo = BBCBank;
 		};
+		B8A819B21E9E944A0016B995 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B829194D1E79308A006146ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8A819A81E9E944A0016B995;
+			remoteInfo = SiriExtUI;
+		};
+		B8A819B51E9E944A0016B995 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B829194D1E79308A006146ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8A8199F1E9E944A0016B995;
+			remoteInfo = SiriExt;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B8A819BE1E9E944A0016B995 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B8A819B41E9E944A0016B995 /* SiriExtUI.appex in Embed App Extensions */,
+				B8A819B71E9E944A0016B995 /* SiriExt.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		04C923E9C1F12D8E265CCFC9 /* Pods-BBCBankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBCBankTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BBCBankTests/Pods-BBCBankTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -56,7 +96,6 @@
 		366E869C0AC8BAD965C39BA9 /* Pods-BBCBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBCBank.release.xcconfig"; path = "Pods/Target Support Files/Pods-BBCBank/Pods-BBCBank.release.xcconfig"; sourceTree = "<group>"; };
 		539D66EAD4C62EBEADFE6B3E /* Pods-BBCBankUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBCBankUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BBCBankUITests/Pods-BBCBankUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5F54BBFDF30553E49336FA8C /* Pods_BBCBankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BBCBankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		61943C821E8309A000E39FE6 /* Confirm Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Confirm Controller.swift"; sourceTree = "<group>"; };
 		6333E34AE6E28875CBC42DA4 /* Pods-BBCBankUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBCBankUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BBCBankUITests/Pods-BBCBankUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7E3FA709489A1B0A376C44EE /* Pods_BBCBankUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BBCBankUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80337B11E8D93BC00EB618D /* SuccessController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessController.swift; sourceTree = "<group>"; };
@@ -75,6 +114,12 @@
 		B82919781E79308A006146ED /* BBCBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBCBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B829197C1E79308A006146ED /* BBCBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCBankUITests.swift; sourceTree = "<group>"; };
 		B829197E1E79308A006146ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B83807C71E9E8030006C1FF4 /* BBCBank.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BBCBank.entitlements; sourceTree = "<group>"; };
+		B83807CA1E9E804A006C1FF4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B83807CC1E9E8D0A006C1FF4 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		B83807D21E9E8F38006C1FF4 /* SiriBBC.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriBBC.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B83807DB1E9E8F38006C1FF4 /* SiriBBCUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriBBCUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B83807DC1E9E8F38006C1FF4 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
 		B83D6E0D1E7C4ABD00CD3DE7 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		B842CC871E8B23610021E291 /* MobilePINRegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobilePINRegisterController.swift; sourceTree = "<group>"; };
 		B842CC891E8B25E00021E291 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -83,6 +128,16 @@
 		B88E52661E79398700BC4A35 /* ING_Bank_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ING_Bank_logo.jpg; sourceTree = "<group>"; };
 		B88E52671E79398700BC4A35 /* launch_INGBank.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch_INGBank.jpg; sourceTree = "<group>"; };
 		B8986D751E7C0B14004913CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B8A819A01E9E944A0016B995 /* SiriExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8A819A21E9E944A0016B995 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		B8A819A41E9E944A0016B995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8A819A91E9E944A0016B995 /* SiriExtUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriExtUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8A819AC1E9E944A0016B995 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		B8A819AF1E9E944A0016B995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		B8A819B11E9E944A0016B995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8C925691EA4086C0076D0A2 /* RemittanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemittanceController.swift; sourceTree = "<group>"; };
+		B8C9256B1EA40F900076D0A2 /* ConfirmController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmController.swift; sourceTree = "<group>"; };
+		B8C9256D1EA4116C0076D0A2 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		B8CC28AD1E99777D00BEE377 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = line.png; path = BBCBank/line.png; sourceTree = "<group>"; };
 		CE403F4799EF360C823852E1 /* Pods-BBCBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBCBank.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BBCBank/Pods-BBCBank.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +147,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B83807CD1E9E8D0A006C1FF4 /* Intents.framework in Frameworks */,
+				B83807CB1E9E804A006C1FF4 /* MapKit.framework in Frameworks */,
 				F5EB48D6D3710F3002179E23 /* Pods_BBCBank.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,15 +169,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B83807CF1E9E8F38006C1FF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B83807D81E9E8F38006C1FF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B83807DD1E9E8F38006C1FF4 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A8199D1E9E944A0016B995 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A819A61E9E944A0016B995 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A819AA1E9E944A0016B995 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		3B7D44CFBBF93B3915300D2B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B83807CC1E9E8D0A006C1FF4 /* Intents.framework */,
+				B83807CA1E9E804A006C1FF4 /* MapKit.framework */,
 				29DCD21239E5FC994794031F /* Pods_BBCBank.framework */,
 				5F54BBFDF30553E49336FA8C /* Pods_BBCBankTests.framework */,
 				7E3FA709489A1B0A376C44EE /* Pods_BBCBankUITests.framework */,
+				B83807DC1E9E8F38006C1FF4 /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -149,6 +239,8 @@
 				B82919571E79308A006146ED /* BBCBank */,
 				B82919701E79308A006146ED /* BBCBankTests */,
 				B829197B1E79308A006146ED /* BBCBankUITests */,
+				B8A819A11E9E944A0016B995 /* SiriExt */,
+				B8A819AB1E9E944A0016B995 /* SiriExtUI */,
 				B82919561E79308A006146ED /* Products */,
 				53450C58F3818FC43B139EA3 /* Pods */,
 				3B7D44CFBBF93B3915300D2B /* Frameworks */,
@@ -161,6 +253,10 @@
 				B82919551E79308A006146ED /* BBCBank.app */,
 				B829196D1E79308A006146ED /* BBCBankTests.xctest */,
 				B82919781E79308A006146ED /* BBCBankUITests.xctest */,
+				B83807D21E9E8F38006C1FF4 /* SiriBBC.appex */,
+				B83807DB1E9E8F38006C1FF4 /* SiriBBCUI.appex */,
+				B8A819A01E9E944A0016B995 /* SiriExt.appex */,
+				B8A819A91E9E944A0016B995 /* SiriExtUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,6 +264,7 @@
 		B82919571E79308A006146ED /* BBCBank */ = {
 			isa = PBXGroup;
 			children = (
+				B83807C71E9E8030006C1FF4 /* BBCBank.entitlements */,
 				B82919581E79308A006146ED /* AppDelegate.swift */,
 				B83D6E0D1E7C4ABD00CD3DE7 /* LoginController.swift */,
 				B80C83981E7C55F400165F0B /* MobilePINController.swift */,
@@ -175,10 +272,12 @@
 				B80C83961E7C4F3900165F0B /* MainPageController.swift */,
 				B842CC871E8B23610021E291 /* MobilePINRegisterController.swift */,
 				B842CC891E8B25E00021E291 /* User.swift */,
+				B8C9256D1EA4116C0076D0A2 /* Transaction.swift */,
 				B842CC8B1E8B2E6E0021E291 /* ShowMobilePINController.swift */,
-				61943C821E8309A000E39FE6 /* Confirm Controller.swift */,
-				B82919601E79308A006146ED /* Main.storyboard */,
+				B8C925691EA4086C0076D0A2 /* RemittanceController.swift */,
+				B8C9256B1EA40F900076D0A2 /* ConfirmController.swift */,
 				B82919631E79308A006146ED /* Assets.xcassets */,
+				B82919601E79308A006146ED /* Main.storyboard */,
 				B82919651E79308A006146ED /* LaunchScreen.storyboard */,
 				B8986D751E7C0B14004913CE /* GoogleService-Info.plist */,
 				B82919681E79308A006146ED /* Info.plist */,
@@ -204,6 +303,25 @@
 			path = BBCBankUITests;
 			sourceTree = "<group>";
 		};
+		B8A819A11E9E944A0016B995 /* SiriExt */ = {
+			isa = PBXGroup;
+			children = (
+				B8A819A21E9E944A0016B995 /* IntentHandler.swift */,
+				B8A819A41E9E944A0016B995 /* Info.plist */,
+			);
+			path = SiriExt;
+			sourceTree = "<group>";
+		};
+		B8A819AB1E9E944A0016B995 /* SiriExtUI */ = {
+			isa = PBXGroup;
+			children = (
+				B8A819AC1E9E944A0016B995 /* IntentViewController.swift */,
+				B8A819AE1E9E944A0016B995 /* MainInterface.storyboard */,
+				B8A819B11E9E944A0016B995 /* Info.plist */,
+			);
+			path = SiriExtUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -217,10 +335,13 @@
 				B82919531E79308A006146ED /* Resources */,
 				4FE128D85C5B75FF28510950 /* [CP] Embed Pods Frameworks */,
 				257E77070BC668790B825D9F /* [CP] Copy Pods Resources */,
+				B8A819BE1E9E944A0016B995 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B8A819B31E9E944A0016B995 /* PBXTargetDependency */,
+				B8A819B61E9E944A0016B995 /* PBXTargetDependency */,
 			);
 			name = BBCBank;
 			productName = BBCBank;
@@ -269,13 +390,81 @@
 			productReference = B82919781E79308A006146ED /* BBCBankUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B83807D11E9E8F38006C1FF4 /* SiriBBC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B83807EE1E9E8F38006C1FF4 /* Build configuration list for PBXNativeTarget "SiriBBC" */;
+			buildPhases = (
+				B83807CE1E9E8F38006C1FF4 /* Sources */,
+				B83807CF1E9E8F38006C1FF4 /* Frameworks */,
+				B83807D01E9E8F38006C1FF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiriBBC;
+			productName = SiriBBC;
+			productReference = B83807D21E9E8F38006C1FF4 /* SiriBBC.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		B83807DA1E9E8F38006C1FF4 /* SiriBBCUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B83807EB1E9E8F38006C1FF4 /* Build configuration list for PBXNativeTarget "SiriBBCUI" */;
+			buildPhases = (
+				B83807D71E9E8F38006C1FF4 /* Sources */,
+				B83807D81E9E8F38006C1FF4 /* Frameworks */,
+				B83807D91E9E8F38006C1FF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiriBBCUI;
+			productName = SiriBBCUI;
+			productReference = B83807DB1E9E8F38006C1FF4 /* SiriBBCUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		B8A8199F1E9E944A0016B995 /* SiriExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8A819BD1E9E944A0016B995 /* Build configuration list for PBXNativeTarget "SiriExt" */;
+			buildPhases = (
+				B8A8199C1E9E944A0016B995 /* Sources */,
+				B8A8199D1E9E944A0016B995 /* Frameworks */,
+				B8A8199E1E9E944A0016B995 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiriExt;
+			productName = SiriExt;
+			productReference = B8A819A01E9E944A0016B995 /* SiriExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		B8A819A81E9E944A0016B995 /* SiriExtUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8A819BC1E9E944A0016B995 /* Build configuration list for PBXNativeTarget "SiriExtUI" */;
+			buildPhases = (
+				B8A819A51E9E944A0016B995 /* Sources */,
+				B8A819A61E9E944A0016B995 /* Frameworks */,
+				B8A819A71E9E944A0016B995 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiriExtUI;
+			productName = SiriExtUI;
+			productReference = B8A819A91E9E944A0016B995 /* SiriExtUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B829194D1E79308A006146ED /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Cansu Koçak";
 				TargetAttributes = {
@@ -283,6 +472,17 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = W99V84LM72;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 					B829196C1E79308A006146ED = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -295,6 +495,26 @@
 						DevelopmentTeam = W99V84LM72;
 						ProvisioningStyle = Automatic;
 						TestTargetID = B82919541E79308A006146ED;
+					};
+					B83807D11E9E8F38006C1FF4 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = W99V84LM72;
+						ProvisioningStyle = Automatic;
+					};
+					B83807DA1E9E8F38006C1FF4 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = W99V84LM72;
+						ProvisioningStyle = Automatic;
+					};
+					B8A8199F1E9E944A0016B995 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = W99V84LM72;
+						ProvisioningStyle = Automatic;
+					};
+					B8A819A81E9E944A0016B995 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = W99V84LM72;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -314,6 +534,10 @@
 				B82919541E79308A006146ED /* BBCBank */,
 				B829196C1E79308A006146ED /* BBCBankTests */,
 				B82919771E79308A006146ED /* BBCBankUITests */,
+				B83807D11E9E8F38006C1FF4 /* SiriBBC */,
+				B83807DA1E9E8F38006C1FF4 /* SiriBBCUI */,
+				B8A8199F1E9E944A0016B995 /* SiriExt */,
+				B8A819A81E9E944A0016B995 /* SiriExtUI */,
 			);
 		};
 /* End PBXProject section */
@@ -346,6 +570,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B83807D01E9E8F38006C1FF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B83807D91E9E8F38006C1FF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A8199E1E9E944A0016B995 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A819A71E9E944A0016B995 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A819B01E9E944A0016B995 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,15 +747,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8C9256E1EA4116C0076D0A2 /* Transaction.swift in Sources */,
 				B842CC881E8B23610021E291 /* MobilePINRegisterController.swift in Sources */,
 				B80C83971E7C4F3900165F0B /* MainPageController.swift in Sources */,
 				B82919591E79308A006146ED /* AppDelegate.swift in Sources */,
 				B80337B21E8D93BC00EB618D /* SuccessController.swift in Sources */,
 				B83D6E0E1E7C4ABD00CD3DE7 /* LoginController.swift in Sources */,
+				B8C9256A1EA4086C0076D0A2 /* RemittanceController.swift in Sources */,
 				B842CC8C1E8B2E6E0021E291 /* ShowMobilePINController.swift in Sources */,
 				B80C83991E7C55F400165F0B /* MobilePINController.swift in Sources */,
-				61943C831E8309A000E39FE6 /* Confirm Controller.swift in Sources */,
 				B842CC8A1E8B25E00021E291 /* User.swift in Sources */,
+				B8C9256C1EA40F900076D0A2 /* ConfirmController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +777,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B83807CE1E9E8F38006C1FF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B83807D71E9E8F38006C1FF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A8199C1E9E944A0016B995 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A819A31E9E944A0016B995 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8A819A51E9E944A0016B995 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A819AD1E9E944A0016B995 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -534,6 +819,16 @@
 			isa = PBXTargetDependency;
 			target = B82919541E79308A006146ED /* BBCBank */;
 			targetProxy = B82919791E79308A006146ED /* PBXContainerItemProxy */;
+		};
+		B8A819B31E9E944A0016B995 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8A819A81E9E944A0016B995 /* SiriExtUI */;
+			targetProxy = B8A819B21E9E944A0016B995 /* PBXContainerItemProxy */;
+		};
+		B8A819B61E9E944A0016B995 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8A8199F1E9E944A0016B995 /* SiriExt */;
+			targetProxy = B8A819B51E9E944A0016B995 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -552,6 +847,14 @@
 				B82919661E79308A006146ED /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B8A819AE1E9E944A0016B995 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8A819AF1E9E944A0016B995 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -597,7 +900,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -641,7 +944,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -654,13 +957,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CE403F4799EF360C823852E1 /* Pods-BBCBank.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BBCBank/BBCBank.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = W99V84LM72;
 				INFOPLIST_FILE = BBCBank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.BBCBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -668,13 +976,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 366E869C0AC8BAD965C39BA9 /* Pods-BBCBank.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BBCBank/BBCBank.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = W99V84LM72;
 				INFOPLIST_FILE = BBCBank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.BBCBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -740,6 +1053,118 @@
 			};
 			name = Release;
 		};
+		B83807EC1E9E8F38006C1FF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = W99V84LM72;
+				INFOPLIST_FILE = SiriBBCUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BBCBank.SiriBBCUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B83807ED1E9E8F38006C1FF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = W99V84LM72;
+				INFOPLIST_FILE = SiriBBCUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BBCBank.SiriBBCUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B83807EF1E9E8F38006C1FF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = W99V84LM72;
+				INFOPLIST_FILE = SiriBBC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BBCBank.SiriBBC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B83807F01E9E8F38006C1FF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = W99V84LM72;
+				INFOPLIST_FILE = SiriBBC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BBCBank.SiriBBC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B8A819B81E9E944A0016B995 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = W99V84LM72;
+				INFOPLIST_FILE = SiriExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BBCBank.SiriExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B8A819B91E9E944A0016B995 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = W99V84LM72;
+				INFOPLIST_FILE = SiriExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BBCBank.SiriExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B8A819BA1E9E944A0016B995 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = W99V84LM72;
+				INFOPLIST_FILE = SiriExtUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BBCBank.SiriExtUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B8A819BB1E9E944A0016B995 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = W99V84LM72;
+				INFOPLIST_FILE = SiriExtUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BBCBank.SiriExtUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -775,6 +1200,42 @@
 			buildConfigurations = (
 				B82919881E79308A006146ED /* Debug */,
 				B82919891E79308A006146ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B83807EB1E9E8F38006C1FF4 /* Build configuration list for PBXNativeTarget "SiriBBCUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B83807EC1E9E8F38006C1FF4 /* Debug */,
+				B83807ED1E9E8F38006C1FF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B83807EE1E9E8F38006C1FF4 /* Build configuration list for PBXNativeTarget "SiriBBC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B83807EF1E9E8F38006C1FF4 /* Debug */,
+				B83807F01E9E8F38006C1FF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8A819BC1E9E944A0016B995 /* Build configuration list for PBXNativeTarget "SiriExtUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8A819BA1E9E944A0016B995 /* Debug */,
+				B8A819BB1E9E944A0016B995 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8A819BD1E9E944A0016B995 /* Build configuration list for PBXNativeTarget "SiriExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8A819B81E9E944A0016B995 /* Debug */,
+				B8A819B91E9E944A0016B995 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

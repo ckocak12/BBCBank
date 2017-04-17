@@ -43,9 +43,8 @@ class LoginController: UIViewController, UIApplicationDelegate  {
                     User.sharedUser.customerNo = (snapshot.value as? NSDictionary)?["customer_no"] as? Int ?? 0
                     User.sharedUser.balance = (snapshot.value as? NSDictionary)?["balance"] as? Double ?? 0
                     User.sharedUser.userNameSurname = (snapshot.value as? NSDictionary)?["name_surname"] as? String ?? ""
-                })
-                //MARK: Sending to next page
-                DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
+                    
+                    //MARK: Sending to next page
                     let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "mainPage") as! MainPageController
                     self.present(nextPage, animated: true)
                 })

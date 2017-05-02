@@ -7,6 +7,8 @@
 //
 
 import IntentsUI
+import UIKit
+import Intents
 
 // As an example, this extension's Info.plist has been configured to handle interactions for INSendMessageIntent.
 // You will want to replace this or add other intents as appropriate.
@@ -19,7 +21,16 @@ class IntentViewController: UIViewController, INUIHostedViewControlling {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // Ask for Siri permission
+        INPreferences.requestSiriAuthorization {
+            authorizationStatus in
+            switch authorizationStatus {
+            case .authorized:
+                print("Authorized")
+            default:
+                print("Not Authorized")
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {

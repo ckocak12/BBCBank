@@ -130,10 +130,13 @@ class IntentHandler: INSendPaymentIntent, INSendPaymentIntentHandling {
     
     
     func handle(sendPayment intent: INSendPaymentIntent, completion: @escaping (INSendPaymentIntentResponse) -> Void) {
-        // Implement your application logic to set the message attribute here.
-        let userActivity = NSUserActivity(activityType: NSStringFromClass(INSendPaymentIntent.self))
-        let response = INSendPaymentIntentResponse(code: .success, userActivity: userActivity)
-        completion(response)
+        // check that valid values for payee and currencyAmount
+        guard let payee = intent.payee, let amount = intent.currencyAmount else {
+            return completion(INSendPaymentIntentResponse(code: .unspecified, userActivity: nil))
+        }
+        // make payment
+        print("Sending \(amount) payment to \(payee).")
+        completion(INSendPaymentIntentResponse(code: .unspecified, userActivity: nil))
     }
 
     

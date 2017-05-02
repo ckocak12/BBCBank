@@ -166,7 +166,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OF2-ED-vp9">
-                                <rect key="frame" x="16" y="134" width="343" height="199.5"/>
+                                <rect key="frame" x="16" y="134" width="343" height="149.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="**Cep şifre kodunuz yoksa, almak için lütfen giriş yapınız." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ma0-lk-NUc">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="14"/>
@@ -174,20 +174,14 @@
                                         <color key="textColor" red="0.1084394306" green="0.11191776389999999" blue="0.28638809920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kullanıcı Adınız" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ig-hh-gtT">
-                                        <rect key="frame" x="0.0" y="34" width="343" height="30"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="TrebuchetMS-Italic" family="Trebuchet MS" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cep Şifre Kodunuz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tsf-1O-Iwq">
-                                        <rect key="frame" x="0.0" y="84" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="34" width="343" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="TrebuchetMS-Italic" family="Trebuchet MS" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gbg-Zq-O2K">
-                                        <rect key="frame" x="0.0" y="134" width="343" height="29"/>
+                                        <rect key="frame" x="0.0" y="84" width="343" height="29"/>
                                         <color key="backgroundColor" red="0.92263883349999998" green="0.4732899793" blue="0.23578841249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="14"/>
                                         <state key="normal" title="Şifre Al">
@@ -197,8 +191,8 @@
                                             <action selector="GetPINClicked:" destination="OZR-rj-7JK" eventType="touchUpInside" id="J1J-Ig-3Ld"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MwA-Z8-F31">
-                                        <rect key="frame" x="0.0" y="183" width="343" height="16.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MwA-Z8-F31">
+                                        <rect key="frame" x="0.0" y="133" width="343" height="16.5"/>
                                         <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
                                         <color key="textColor" red="0.70002833549999999" green="0.1688269315" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -226,7 +220,6 @@
                         <outlet property="allertLabel" destination="ma0-lk-NUc" id="u66-fq-m7d"/>
                         <outlet property="errorLabel" destination="MwA-Z8-F31" id="DMc-zI-dfl"/>
                         <outlet property="passwordField" destination="Tsf-1O-Iwq" id="b5g-Yv-tQ0"/>
-                        <outlet property="userNameField" destination="1ig-hh-gtT" id="mhO-C3-C2H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uih-9C-aiZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -288,7 +281,7 @@
         <!--ATM Bulucu-->
         <scene sceneID="pvO-EV-sh0">
             <objects>
-                <viewController storyboardIdentifier="ATMLocator" title="ATM Bulucu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FeX-dq-8UC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ATMLocator" title="ATM Bulucu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FeX-dq-8UC" customClass="MapController" customModule="BBCBank" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AYk-Oc-87e"/>
                         <viewControllerLayoutGuide type="bottom" id="DMH-Kf-i9V"/>
@@ -297,18 +290,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mNu-d6-22b">
-                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mNu-d6-22b">
+                                <rect key="frame" x="16" y="38" width="343" height="548"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SkG-3v-yc5">
+                                <rect key="frame" x="16" y="608" width="343" height="30"/>
+                                <state key="normal" title="Geri"/>
+                                <connections>
+                                    <action selector="backClicked:" destination="FeX-dq-8UC" eventType="touchUpInside" id="ly2-2Y-3ZN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="mNu-d6-22b" secondAttribute="trailing" id="IoU-vt-vrZ"/>
-                            <constraint firstItem="mNu-d6-22b" firstAttribute="top" secondItem="AYk-Oc-87e" secondAttribute="bottom" id="bNP-xf-OlF"/>
-                            <constraint firstItem="mNu-d6-22b" firstAttribute="leading" secondItem="p1y-Zy-GDM" secondAttribute="leadingMargin" id="sDo-q5-LWA"/>
-                            <constraint firstItem="DMH-Kf-i9V" firstAttribute="top" secondItem="mNu-d6-22b" secondAttribute="bottom" id="xPz-0j-Ibe"/>
+                            <constraint firstItem="DMH-Kf-i9V" firstAttribute="top" secondItem="SkG-3v-yc5" secondAttribute="bottom" constant="29" id="0Qm-PZ-P64"/>
+                            <constraint firstItem="mNu-d6-22b" firstAttribute="leading" secondItem="p1y-Zy-GDM" secondAttribute="leadingMargin" id="8oF-hb-ObH"/>
+                            <constraint firstItem="mNu-d6-22b" firstAttribute="leading" secondItem="SkG-3v-yc5" secondAttribute="leading" id="9sB-S9-KAu"/>
+                            <constraint firstItem="mNu-d6-22b" firstAttribute="trailing" secondItem="p1y-Zy-GDM" secondAttribute="trailingMargin" id="X9O-SE-J1K"/>
+                            <constraint firstItem="mNu-d6-22b" firstAttribute="top" secondItem="AYk-Oc-87e" secondAttribute="bottom" constant="18" id="cBa-n0-9Bw"/>
+                            <constraint firstItem="SkG-3v-yc5" firstAttribute="top" secondItem="mNu-d6-22b" secondAttribute="bottom" constant="22" id="l5q-nJ-S5Z"/>
+                            <constraint firstItem="mNu-d6-22b" firstAttribute="trailing" secondItem="SkG-3v-yc5" secondAttribute="trailing" id="tnb-d4-4aH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="SkG-3v-yc5" id="xfL-nL-egH"/>
+                        <outlet property="mapView" destination="mNu-d6-22b" id="gth-xP-dVz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tt1-HE-w0j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -481,7 +488,7 @@
                                 </items>
                             </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HRM-r6-zvj">
-                                <rect key="frame" x="16" y="119" width="343" height="130"/>
+                                <rect key="frame" x="16" y="119" width="343" height="170.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qOu-DS-AnA">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
@@ -523,6 +530,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kn7-aG-dIV">
                                                 <rect key="frame" x="0.0" y="0.0" width="295" height="30"/>
                                                 <state key="normal" title="Geri"/>
+                                                <connections>
+                                                    <action selector="backClicked:" destination="LKI-m3-Jye" eventType="touchUpInside" id="6pE-xZ-gT8"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="405-6m-O1q">
                                                 <rect key="frame" x="295" y="0.0" width="48" height="30"/>
@@ -533,6 +543,12 @@
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2da-Ck-DEw">
+                                        <rect key="frame" x="0.0" y="150" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.70002833549999999" green="0.1688269315" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ING_Bank_logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AVL-NQ-fAg">
@@ -558,7 +574,9 @@
                     </view>
                     <connections>
                         <outlet property="amountField" destination="le5-HR-X6c" id="ta9-qw-Mi2"/>
+                        <outlet property="backButton" destination="kn7-aG-dIV" id="zyS-l5-IjU"/>
                         <outlet property="continueButton" destination="405-6m-O1q" id="K8Q-hu-8jF"/>
+                        <outlet property="errorLabel" destination="2da-Ck-DEw" id="eAy-yu-VeY"/>
                         <outlet property="userNameField" destination="tXR-Nr-tna" id="vkh-vg-6fe"/>
                     </connections>
                 </viewController>
@@ -578,8 +596,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NPN-xb-N7r">
-                                <rect key="frame" x="16" y="35" width="343" height="71"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="NPN-xb-N7r">
+                                <rect key="frame" x="16" y="65" width="343" height="111"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k6q-l6-woq">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
@@ -599,7 +617,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b4R-NN-aNh">
-                                        <rect key="frame" x="0.0" y="20.5" width="343" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="40.5" width="343" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Miktar: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLg-XI-ssa">
                                                 <rect key="frame" x="0.0" y="0.0" width="57.5" height="20.5"/>
@@ -616,9 +634,9 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hAO-dt-wEi">
-                                        <rect key="frame" x="0.0" y="41" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="81" width="343" height="30"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0p-u8-WqO">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0p-u8-WqO">
                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="Geri"/>
                                                 <connections>
@@ -636,11 +654,21 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ING_Bank_logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="p3w-ng-cNJ">
+                                <rect key="frame" x="16" y="552" width="343" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="0ps-Cs-MF3"/>
+                                    <constraint firstAttribute="width" constant="343" id="fMe-zM-V4j"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="NPN-xb-N7r" firstAttribute="top" secondItem="qhE-Uh-LQN" secondAttribute="bottom" constant="15" id="TYZ-Dd-ycx"/>
+                            <constraint firstItem="p3w-ng-cNJ" firstAttribute="trailing" secondItem="7a4-hp-c8l" secondAttribute="trailingMargin" id="AGe-VO-f44"/>
+                            <constraint firstItem="p3w-ng-cNJ" firstAttribute="leading" secondItem="7a4-hp-c8l" secondAttribute="leadingMargin" id="MxB-sd-dP0"/>
                             <constraint firstItem="NPN-xb-N7r" firstAttribute="leading" secondItem="7a4-hp-c8l" secondAttribute="leadingMargin" id="VYp-0f-cLe"/>
+                            <constraint firstItem="NPN-xb-N7r" firstAttribute="top" secondItem="qhE-Uh-LQN" secondAttribute="bottom" constant="45" id="blg-uL-Dz8"/>
+                            <constraint firstItem="uAL-wh-P8L" firstAttribute="top" secondItem="p3w-ng-cNJ" secondAttribute="bottom" constant="20" id="lYP-Sv-zIB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NPN-xb-N7r" secondAttribute="trailing" id="tYh-Ro-iWi"/>
                         </constraints>
                     </view>
@@ -653,7 +681,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bFa-7P-fwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4934" y="-251"/>
+            <point key="canvasLocation" x="4933.6000000000004" y="-251.42428785607197"/>
         </scene>
         <!--Cep Şifre Kayıt-->
         <scene sceneID="Yip-dU-Kq7">

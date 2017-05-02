@@ -53,20 +53,13 @@ class MobilePINRegisterController: UIViewController, UIApplicationDelegate {
             self.errorLabel.text = "Şifreler eşleşmiyor. Lütfen tekrar deneyiniz."
         }
         else {
-            
-            do {
-                let fileName = "/Users/cansukocak/Documents/Projects/XCode Projects/BBCBank/userData.txt"
-                let writeData = /*theUser.userName + "-" + */passwordField.text!
-                try writeData.write(toFile: fileName, atomically: true, encoding: String.Encoding.utf8)
-            }
-                catch _ as NSError {
-                print("Failed saving data")
-                }
-            }
+                UserDefaults.standard.set(passwordField.text, forKey: "BBCPass")
+                UserDefaults.standard.synchronize()
+        }
         
         let nextPage = storyBoardRef.instantiateViewController(withIdentifier: "success")
         present(nextPage, animated: true)
-        }
+    }
     
     /*
      // MARK: - Navigation

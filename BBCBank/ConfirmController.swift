@@ -25,7 +25,7 @@ class ConfirmController: UIViewController {
             FIRApp.configure()
         }
         userNameField.text = Transaction.sharedTrans.userName
-        amount.text = String(Transaction.sharedTrans.amount)
+        amount.text = String(Transaction.sharedTrans.amount) + " ₺"
         
 
         // Do any additional setup after loading the view.

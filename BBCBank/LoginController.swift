@@ -34,7 +34,7 @@ class LoginController: UIViewController, UIApplicationDelegate  {
         let password = passwordField.text!
         
         FIRAuth.auth()?.signIn(withEmail: name, password: password) { (user, error) in
-            if User.sharedUser.mobilePIN == -1 {
+//            if User.sharedUser.mobilePIN == -1 {
             if error == nil {
                 //MARK: Creating User from database
                 self.databaseRef = FIRDatabase.database().reference()
@@ -57,8 +57,8 @@ class LoginController: UIViewController, UIApplicationDelegate  {
                     self.ErrorLabel.text = "Kullanıcı adınızı ya da şifrenizi hatalı girdiniz."
                 }
             }
-        }
-            else {
+//        }
+ /*           else {
                 if self.userNameField.text == User.sharedUser.userName && self.passwordField.text == String(User.sharedUser.mobilePIN) {
                     DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
                     let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "mainPage") as! MainPageController
@@ -74,7 +74,7 @@ class LoginController: UIViewController, UIApplicationDelegate  {
                     }
 
                 }
-            }
+            }*/
         }
     }
         

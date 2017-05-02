@@ -16,7 +16,6 @@ class MobilePINController: UIViewController {
     //MARK: Outlets
     
     @IBOutlet weak var allertLabel: UILabel!
-    @IBOutlet weak var userNameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var PINButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
@@ -25,10 +24,8 @@ class MobilePINController: UIViewController {
     
     @IBAction func GetPINClicked(_ sender: UIButton) {
         
-        theUser.userName = userNameField.text!
         do {
-        let userPassword = try NSString(contentsOfFile: "/Users/cansukocak/Documents/Projects/XCode Projects/BBCBank/userData.txt",
-                                encoding: String.Encoding.utf8.rawValue)
+            let userPassword = UserDefaults.standard.object(forKey: "BBCPass") as! String
             if passwordField.text! == userPassword as String {
                 theUser.mobilePIN = Int(arc4random_uniform(UInt32(99999999)))
                 let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "showPIN")
@@ -36,11 +33,11 @@ class MobilePINController: UIViewController {
                 
             }
             else {
-                if userNameField.text == "" || passwordField.text == "" {
+                if passwordField.text == "" {
                     errorLabel.text = "Lütfen bilgileri eksiksiz giriniz."
                 }
                 else {
-                    errorLabel.text = "Kullanıcı adınızı ya da şifrenizi yanlış girdiniz."
+                    errorLabel.text = "Şifrenizi yanlış girdiniz. Lütfen tekrar deneyiniz."
                 }
             }
         }

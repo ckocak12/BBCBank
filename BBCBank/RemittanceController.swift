@@ -14,6 +14,9 @@ class RemittanceController: UIViewController {
     @IBOutlet weak var userNameField: UITextField!
     @IBOutlet weak var amountField: UITextField!
     @IBOutlet weak var continueButton: UIButton!
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var errorLabel: UILabel!
+    
     
     let theUser = User.sharedUser
     let transaction = Transaction.sharedTrans
@@ -31,11 +34,26 @@ class RemittanceController: UIViewController {
     }
     
     @IBAction func continueClicked(_ sender: UIButton) {
-        Transaction.sharedTrans.userName = userNameField.text!
-        Transaction.sharedTrans.amount = Double(amountField.text!)!
-        let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "confirmPage") as! ConfirmController
+        
+        
+        
+        
+        if userNameField.text! == "" || amountField.text! == "" {
+            errorLabel.text = "Lütfen bilgileri eksiksiz giriniz."
+        }
+        else {
+            Transaction.sharedTrans.userName = userNameField.text!
+            Transaction.sharedTrans.amount = Double(amountField.text!)!
+            let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "confirmPage") as! ConfirmController
+            self.present(nextPage, animated: true)
+        }
+    }
+    
+    @IBAction func backClicked(_ sender: UIButton) {
+        let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "mainPage") as! MainPageController
         self.present(nextPage, animated: true)
     }
+    
     
 
     /*

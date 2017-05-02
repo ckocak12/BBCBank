@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import Intents
 
 class LoginController: UIViewController, UIApplicationDelegate  {
     
@@ -98,7 +99,16 @@ class LoginController: UIViewController, UIApplicationDelegate  {
         if FIRApp.defaultApp() == nil {
             FIRApp.configure()
         }
-            // Do any additional setup after loading the view.
+        // Ask for Siri permission
+        INPreferences.requestSiriAuthorization {
+            authorizationStatus in
+            switch authorizationStatus {
+            case .authorized:
+                print("Authorized")
+            default:
+                print("Not Authorized")
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

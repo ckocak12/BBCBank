@@ -24,7 +24,6 @@ class MobilePINController: UIViewController {
     
     @IBAction func GetPINClicked(_ sender: UIButton) {
         
-        do {
             let userPassword = UserDefaults.standard.object(forKey: "BBCPass") as! String
             if passwordField.text! == userPassword as String {
                 theUser.mobilePIN = Int(arc4random_uniform(UInt32(99999999)))
@@ -40,10 +39,6 @@ class MobilePINController: UIViewController {
                     errorLabel.text = "Şifrenizi yanlış girdiniz. Lütfen tekrar deneyiniz."
                 }
             }
-        }
-        catch {
-            print("Failed reading data.")
-        }
     }
     
 

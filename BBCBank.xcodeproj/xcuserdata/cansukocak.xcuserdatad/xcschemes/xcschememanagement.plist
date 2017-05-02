@@ -9,6 +9,16 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>BBCSiri.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>BBCSiriUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 		<key>SiriExt.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -43,6 +53,16 @@
 			<true/>
 		</dict>
 		<key>B83807DA1E9E8F38006C1FF4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B8824E611EB9059900A4B4A5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B8824E6A1EB9059900A4B4A5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

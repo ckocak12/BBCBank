@@ -1,8 +1,8 @@
 //
 //  IntentViewController.swift
-//  SiriExtUI
+//  BBCSiriUI
 //
-//  Created by Cansu Koçak on 12/04/2017.
+//  Created by Cansu Koçak on 02/05/2017.
 //  Copyright © 2017 Cansu Koçak. All rights reserved.
 //
 
@@ -19,6 +19,7 @@ class IntentViewController: UIViewController, INUIHostedViewControlling {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view.
     }
     
     override func didReceiveMemoryWarning() {

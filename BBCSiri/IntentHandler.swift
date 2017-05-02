@@ -20,10 +20,10 @@ import Intents
 // "Search for messages in <myApp>"
 
 
-class IntentHandler: INExtension, INSendPaymentIntent, INSendPaymentIntentHandling {
+class IntentHandler: INSendPaymentIntent, INSendPaymentIntentHandling {
     
     
-     func handler(for intent: INIntent) -> Any {
+    func handler(for intent: INIntent) -> Any {
         // This is the default implementation.  If you want different objects to handle different intents,
         // you can override this and return the handler you want for that particular intent.
         
@@ -39,7 +39,5 @@ class IntentHandler: INExtension, INSendPaymentIntent, INSendPaymentIntentHandli
         print("Sending \(amount) payment to \(payee).")
         completion(INSendPaymentIntentResponse(code: .unspecified, userActivity: nil))
     }
-
     
 }
-

@@ -23,6 +23,7 @@ class MapController: UIViewController {
         super.viewDidLoad()
         requestLocationAccess()
         addAnnotations()
+       // self.mapView.setUserTrackingMode(MKUserTrackingMode.follow, animated:true)
         // Do any additional setup after loading the view.
     }
 
@@ -55,6 +56,12 @@ class MapController: UIViewController {
     func addAnnotations() {
         mapView.delegate = self as MKMapViewDelegate
         mapView.addAnnotations(locations)
+        
+       /* let annotation = MKPointAnnotation()
+        annotation.coordinate = CLLocationCoordinate2DMake(41.4567, 29.2345)
+        annotation.title = "My annot"
+        annotation.subtitle = "my annot sub"
+        mapView.addAnnotation(annotation)*/
     }
 }
 

@@ -3,44 +3,84 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>longitude</key>
-		<real>29.058838</real>
-		<key>latitude</key>
-		<real>41.11984</real>
-		<key>description</key>
-		<string>ATM0</string>
 		<key>title</key>
-		<string>ATM0</string>
+		<string>INGBank Sarıyer ATM</string>
+		<key>description</key>
+		<string>Cumhuriyet Mah. Arabayolu Caddesi Sarıyer/IST</string>
+		<key>longitude</key>
+		<real>29.048161</real>
+		<key>latitude</key>
+		<real>41.117495</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>INGBank Beykoz ATM</string>
+		<key>description</key>
+		<string>Anadolu Kavağı Mah. Macartabya Caddesi, Beykoz/IST</string>
+		<key>longitude</key>
+		<real>29.083471</real>
+		<key>latitude</key>
+		<real>41.170052</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>INGBank Beykoz ATM</string>
+		<key>description</key>
+		<string>Merkez Mah. Kelle Ibrahim Caddesi Beykoz/IST</string>
+		<key>longitude</key>
+		<real>29.093026</real>
+		<key>latitude</key>
+		<real>41.133142</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>INGBank Beykoz ATM</string>
+		<key>description</key>
+		<string>Paşabahçe Mah. Barbaros Caddesi Beykoz/IST</string>
+		<key>longitude</key>
+		<real>29.096523</real>
+		<key>latitude</key>
+		<real>41.114692</real>
 	</dict>
 	<dict>
 		<key>longitude</key>
-		<real>-118.2437</real>
+		<real>29.023805</real>
 		<key>latitude</key>
-		<real>34.0522</real>
+		<real>41.115494</real>
 		<key>description</key>
-		<string>ATM1</string>
+		<string>Maslak Mahallesi Şişli/IST</string>
 		<key>title</key>
-		<string>ATM1</string>
+		<string>INGBank Maslak Şube</string>
 	</dict>
 	<dict>
 		<key>longitude</key>
-		<real>-122.4194</real>
+		<real>29.001542</real>
 		<key>latitude</key>
-		<real>37.7749</real>
+		<real>41.066714</real>
 		<key>description</key>
-		<string>ATM2</string>
+		<string>Mecidiyeköy Mahallesi, Büyükdere Caddesi, Şişli/IST</string>
 		<key>title</key>
-		<string>ATM2</string>
+		<string>INGBank Mecidiyeköy ATM</string>
 	</dict>
 	<dict>
 		<key>longitude</key>
-		<real>-74.0059</real>
+		<real>29.058962</real>
 		<key>latitude</key>
-		<real>40.7128</real>
+		<real>41.17912</real>
 		<key>description</key>
-		<string>ATM3</string>
+		<string>Sarıyer, Yenimahalle, Sarıyer/IST</string>
 		<key>title</key>
-		<string>ATM3</string>
+		<string>INGBank Sarıyer ATM </string>
+	</dict>
+	<dict>
+		<key>longitude</key>
+		<real>29.057715</real>
+		<key>latitude</key>
+		<real>41.169739</real>
+		<key>description</key>
+		<string>Merkez Mah. Yenimahalle Caddesi, Sarıyer/IST</string>
+		<key>title</key>
+		<string>INGBank Merkez Mah. ATM</string>
 	</dict>
 </array>
 </plist>

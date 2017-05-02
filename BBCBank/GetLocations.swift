@@ -10,20 +10,10 @@ import MapKit
 
 class Location: NSObject {
     
-    var title: String?
-    var subtitle: String?
-    var coordinate: CLLocationCoordinate2D
-    
-    init(title: String?, subtitle: String?, coordinate: CLLocationCoordinate2D) {
-        self.title = title
-        self.subtitle = subtitle
-        self.coordinate = coordinate
-    }
-    
-    static func getLocations() -> [Location] {
+    static func getLocations() -> [MKPointAnnotation] {
        guard let path = Bundle.main.path(forResource: "ATMLocations", ofType: "plist"), let array = NSArray(contentsOfFile: path) else { return [] }
         
-        var locations = [Location]()
+        var annotations = [MKPointAnnotation]()
         
         for item in array {
             let dictionary = item as? [String:Any]
@@ -32,11 +22,15 @@ class Location: NSObject {
             let latitude = dictionary?["latitude"] as? Double ?? 0
             let longitude = dictionary?["longitude"] as? Double ?? 0
             
-            let location = Location(title: title, subtitle: subtitle, coordinate: CLLocationCoordinate2DMake(latitude, longitude))
-                locations.append(location)
+            let annotation = MKPointAnnotation()
+            
+            
+            annotation.coordinate = CLLocationCoordinate2DMake(latitude, longitude)
+            annotation.title = title
+            annotation.subtitle = subtitle
+            annotations.append(annotation)
         }
         
-        return locations as [Location]
+        return annotations as [MKPointAnnotation]
     }
 }
-    extension Location: MKAnnotation { }

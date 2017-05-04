@@ -519,6 +519,7 @@
 					B8824E871EBBAE4F00A4B4A5 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 3673WZYU3N;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					B8824E8F1EBBAE4F00A4B4A5 = {
@@ -969,6 +970,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -982,6 +984,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.BBCCore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -992,6 +995,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1014,7 +1018,6 @@
 		B8824EA41EBBAE4F00A4B4A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				DEVELOPMENT_TEAM = 3673WZYU3N;
 				INFOPLIST_FILE = BBCCoreTests/Info.plist;
@@ -1029,7 +1032,6 @@
 		B8824EA51EBBAE4F00A4B4A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				DEVELOPMENT_TEAM = 3673WZYU3N;
 				INFOPLIST_FILE = BBCCoreTests/Info.plist;
@@ -1087,6 +1089,7 @@
 				B8824EA11EBBAE4F00A4B4A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B8824EA31EBBAE4F00A4B4A5 /* Build configuration list for PBXNativeTarget "BBCCoreTests" */ = {
 			isa = XCConfigurationList;
@@ -1095,6 +1098,7 @@
 				B8824EA51EBBAE4F00A4B4A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

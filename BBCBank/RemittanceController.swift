@@ -72,6 +72,14 @@ class RemittanceController: UIViewController {
         self.present(nextPage, animated: true)
     }
     
+ /*   override func restoreUserActivityState(_ activity: NSUserActivity) {
+        let payee = activity.userInfo?["payee"] as! String
+        let amount = activity.userInfo?["content"] as! Double
+        
+        
+        
+    }*/
+    
     
 
     /*

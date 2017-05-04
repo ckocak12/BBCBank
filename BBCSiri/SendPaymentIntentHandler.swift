@@ -11,14 +11,25 @@ import Intents
 class SendPaymentIntentHandler: NSObject, INSendPaymentIntentHandling {
     // MARK: - INSendPaymentIntentHandling
     
-    func handle(sendPayment intent: INSendPaymentIntent, completion: @escaping (INSendPaymentIntentResponse) -> Swift.Void) {
-        if let _ = intent.payee, let _ = intent.currencyAmount {
-            // Handle the payment here!
-            
-            completion(INSendPaymentIntentResponse.init(code: .success, userActivity: nil))
+    
+    func handle(sendPayment intent: INSendPaymentIntent, completion: @escaping (INSendPaymentIntentResponse) -> Void) {
+     /*   let payee = intent.payee
+        let amount = intent.currencyAmount
+        if payee != nil && amount != nil {
+            let activity = NSUserActivity(activityType: "Payment")
+            activity.title = "Pay"
+            activity.userInfo = ["payee": intent.payee ?? "", "amount": intent.currencyAmount ?? 0]
+            activity.becomeCurrent()
         }
-        else {
-            completion(INSendPaymentIntentResponse.init(code: .success, userActivity: nil))
-        }
+
+        
+        print("Sending \(String(describing: amount)) payment to \(String(describing: payee))!")
+        completion(INSendPaymentIntentResponse(code: .success, userActivity: nil))*/
+        
+        completion(INSendPaymentIntentResponse(code: .success, userActivity: nil))
     }
+    
+    
+    
+    
 }

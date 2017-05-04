@@ -69,10 +69,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="6RR-9x-qhF">
-                                <rect key="frame" x="16" y="607" width="343" height="50"/>
+                                <rect key="frame" x="16" y="582" width="343" height="75"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2d-lC-SQQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="113.5" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="171" height="75"/>
                                         <color key="backgroundColor" red="0.1084394306" green="0.11191776389999999" blue="0.28638809920000002" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="s2d-lC-SQQ" secondAttribute="height" multiplier="57:25" id="bgh-Pp-ITh"/>
@@ -86,19 +86,8 @@
                                             <segue destination="OZR-rj-7JK" kind="show" id="Xt6-Ky-tuD"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaq-at-XYH">
-                                        <rect key="frame" x="114.5" y="0.0" width="114" height="50"/>
-                                        <color key="backgroundColor" red="0.1084394306" green="0.11191776389999999" blue="0.28638809920000002" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="12"/>
-                                        <state key="normal" title="Favori İşlemler">
-                                            <color key="titleColor" red="0.1084394306" green="0.11191776389999999" blue="0.28638809920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="favTransClicked:" destination="0cD-vU-I8P" eventType="touchUpInside" id="fZy-s4-TAX"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Enw-II-RGH">
-                                        <rect key="frame" x="229.5" y="0.0" width="113.5" height="50"/>
+                                        <rect key="frame" x="172" y="0.0" width="171" height="75"/>
                                         <color key="backgroundColor" red="0.1084394306" green="0.11191776389999999" blue="0.28638809920000002" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="12"/>
                                         <state key="normal" title="ATM Bulucu">
@@ -142,7 +131,6 @@
                         <outlet property="ErrorLabel" destination="26H-HP-NhB" id="cDH-QF-RIa"/>
                         <outlet property="Label" destination="TJJ-mJ-f91" id="Qsw-rk-Ecy"/>
                         <outlet property="Logo" destination="OTV-yz-Nyx" id="TvG-MD-PuO"/>
-                        <outlet property="favTransButton" destination="oaq-at-XYH" id="3RH-4w-S0Z"/>
                         <outlet property="loginButton" destination="z1u-3e-E5d" id="qU5-9X-yXd"/>
                         <outlet property="mobilePINButton" destination="s2d-lC-SQQ" id="7Ve-Df-V8N"/>
                         <outlet property="passwordField" destination="cYt-NF-fAb" id="edC-nl-y7W"/>
@@ -166,7 +154,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OF2-ED-vp9">
-                                <rect key="frame" x="16" y="134" width="343" height="149.5"/>
+                                <rect key="frame" x="16" y="134" width="343" height="201.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="**Cep şifre kodunuz yoksa, almak için lütfen giriş yapınız." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ma0-lk-NUc">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="14"/>
@@ -184,15 +172,23 @@
                                         <rect key="frame" x="0.0" y="84" width="343" height="29"/>
                                         <color key="backgroundColor" red="0.92263883349999998" green="0.4732899793" blue="0.23578841249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="14"/>
-                                        <state key="normal" title="Şifre Al">
+                                        <state key="normal" title="Tamam">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="GetPINClicked:" destination="OZR-rj-7JK" eventType="touchUpInside" id="J1J-Ig-3Ld"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pia-7h-oPv">
+                                        <rect key="frame" x="0.0" y="133" width="343" height="32"/>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
+                                        <state key="normal" title="Geri"/>
+                                        <connections>
+                                            <action selector="backClicked:" destination="OZR-rj-7JK" eventType="touchUpInside" id="vWx-8X-JWU"/>
+                                        </connections>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MwA-Z8-F31">
-                                        <rect key="frame" x="0.0" y="133" width="343" height="16.5"/>
+                                        <rect key="frame" x="0.0" y="185" width="343" height="16.5"/>
                                         <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
                                         <color key="textColor" red="0.70002833549999999" green="0.1688269315" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -218,6 +214,7 @@
                     <connections>
                         <outlet property="PINButton" destination="Gbg-Zq-O2K" id="Z5v-JX-tHL"/>
                         <outlet property="allertLabel" destination="ma0-lk-NUc" id="u66-fq-m7d"/>
+                        <outlet property="backButton" destination="pia-7h-oPv" id="Csl-jR-bVz"/>
                         <outlet property="errorLabel" destination="MwA-Z8-F31" id="DMc-zI-dfl"/>
                         <outlet property="passwordField" destination="Tsf-1O-Iwq" id="b5g-Yv-tQ0"/>
                     </connections>
@@ -239,7 +236,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="roj-EH-WFv">
-                                <rect key="frame" x="71" y="170" width="233" height="107"/>
+                                <rect key="frame" x="71" y="170" width="233" height="177"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cep Şifreniz: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5x-1u-x2b">
                                         <rect key="frame" x="0.0" y="0.0" width="233" height="20.5"/>
@@ -253,6 +250,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvc-NC-g3v">
+                                        <rect key="frame" x="101.5" y="147" width="30" height="30"/>
+                                        <state key="normal" title="Çık"/>
+                                        <connections>
+                                            <action selector="backClicked:" destination="Cxa-Bt-tuJ" eventType="touchUpInside" id="wls-a0-AZj"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="g5x-1u-x2b" secondAttribute="trailing" id="9pT-3l-wab"/>
@@ -270,6 +274,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="yvc-NC-g3v" id="RTP-kv-wbc"/>
                         <outlet property="mobilePINLabel" destination="6Ag-nF-v9Q" id="ZDJ-3s-4nT"/>
                         <outlet property="titleLabel" destination="g5x-1u-x2b" id="cnp-3p-AaI"/>
                     </connections>
@@ -517,11 +522,17 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Miktarı giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="le5-HR-X6c">
-                                                <rect key="frame" x="63" y="0.0" width="280" height="30"/>
+                                                <rect key="frame" x="63" y="0.0" width="257.5" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhX-2Z-Sec">
+                                                <rect key="frame" x="330.5" y="0.0" width="12.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="0.1084394306" green="0.11191776389999999" blue="0.28638809920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nen-Jl-kGi">
@@ -596,20 +607,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="NPN-xb-N7r">
-                                <rect key="frame" x="16" y="65" width="343" height="111"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="NPN-xb-N7r">
+                                <rect key="frame" x="16" y="65" width="343" height="71"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k6q-l6-woq">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Kime: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENm-KO-Lgh">
-                                                <rect key="frame" x="0.0" y="0.0" width="294.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="313.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.1084394306" green="0.11191776389999999" blue="0.28638809920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hakan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BqM-M7-A4s">
-                                                <rect key="frame" x="294.5" y="0.0" width="48.5" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="bbc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BqM-M7-A4s">
+                                                <rect key="frame" x="313.5" y="0.0" width="29.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.1084394306" green="0.11191776389999999" blue="0.28638809920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
@@ -617,39 +628,20 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b4R-NN-aNh">
-                                        <rect key="frame" x="0.0" y="40.5" width="343" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="50.5" width="343" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Miktar: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLg-XI-ssa">
-                                                <rect key="frame" x="0.0" y="0.0" width="57.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="332.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.1084394306" green="0.11191776389999999" blue="0.28638809920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8R-ny-IX7">
-                                                <rect key="frame" x="57.5" y="0.0" width="285.5" height="20.5"/>
+                                                <rect key="frame" x="332.5" y="0.0" width="10.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.1084394306" green="0.11191776389999999" blue="0.28638809920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hAO-dt-wEi">
-                                        <rect key="frame" x="0.0" y="81" width="343" height="30"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0p-u8-WqO">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
-                                                <state key="normal" title="Geri"/>
-                                                <connections>
-                                                    <action selector="backClicked:" destination="Xsp-JG-Wl9" eventType="touchUpInside" id="K7Z-Qi-Q0c"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bra-Px-nsB">
-                                                <rect key="frame" x="30" y="0.0" width="313" height="30"/>
-                                                <state key="normal" title="Onayla"/>
-                                                <connections>
-                                                    <action selector="confirmClicked:" destination="Xsp-JG-Wl9" eventType="touchUpInside" id="6WC-11-meu"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -661,12 +653,38 @@
                                     <constraint firstAttribute="width" constant="343" id="fMe-zM-V4j"/>
                                 </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iuz-Gr-kbT">
+                                <rect key="frame" x="16" y="196" width="343" height="76"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bra-Px-nsB">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="36"/>
+                                        <color key="backgroundColor" red="0.92263883349999998" green="0.4732899793" blue="0.23578841249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                                        <state key="normal" title="Onayla">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="confirmClicked:" destination="Xsp-JG-Wl9" eventType="touchUpInside" id="6WC-11-meu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0p-u8-WqO">
+                                        <rect key="frame" x="0.0" y="46" width="343" height="30"/>
+                                        <state key="normal" title="Geri"/>
+                                        <connections>
+                                            <action selector="backClicked:" destination="Xsp-JG-Wl9" eventType="touchUpInside" id="K7Z-Qi-Q0c"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="p3w-ng-cNJ" firstAttribute="trailing" secondItem="7a4-hp-c8l" secondAttribute="trailingMargin" id="AGe-VO-f44"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iuz-Gr-kbT" secondAttribute="trailing" id="F1V-Ng-yXP"/>
                             <constraint firstItem="p3w-ng-cNJ" firstAttribute="leading" secondItem="7a4-hp-c8l" secondAttribute="leadingMargin" id="MxB-sd-dP0"/>
                             <constraint firstItem="NPN-xb-N7r" firstAttribute="leading" secondItem="7a4-hp-c8l" secondAttribute="leadingMargin" id="VYp-0f-cLe"/>
+                            <constraint firstItem="iuz-Gr-kbT" firstAttribute="top" secondItem="NPN-xb-N7r" secondAttribute="bottom" constant="60" id="WxO-98-5nU"/>
+                            <constraint firstItem="iuz-Gr-kbT" firstAttribute="leading" secondItem="7a4-hp-c8l" secondAttribute="leadingMargin" id="bSZ-0j-F76"/>
                             <constraint firstItem="NPN-xb-N7r" firstAttribute="top" secondItem="qhE-Uh-LQN" secondAttribute="bottom" constant="45" id="blg-uL-Dz8"/>
                             <constraint firstItem="uAL-wh-P8L" firstAttribute="top" secondItem="p3w-ng-cNJ" secondAttribute="bottom" constant="20" id="lYP-Sv-zIB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NPN-xb-N7r" secondAttribute="trailing" id="tYh-Ro-iWi"/>

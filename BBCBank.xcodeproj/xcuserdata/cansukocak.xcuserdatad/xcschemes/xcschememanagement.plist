@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>BBCCore.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
 		<key>BBCSiri.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -63,6 +68,16 @@
 			<true/>
 		</dict>
 		<key>B8824E6A1EB9059900A4B4A5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B8824E871EBBAE4F00A4B4A5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B8824E8F1EBBAE4F00A4B4A5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

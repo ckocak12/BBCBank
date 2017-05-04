@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RemittanceController: UIViewController {
 
@@ -21,6 +22,7 @@ class RemittanceController: UIViewController {
     let theUser = User.sharedUser
     let transaction = Transaction.sharedTrans
     let storyBoardRef = UIStoryboard(name: "Main", bundle: nil)
+    var databaseRef: FIRDatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,15 +39,31 @@ class RemittanceController: UIViewController {
         
         
         
-        
         if userNameField.text! == "" || amountField.text! == "" {
             errorLabel.text = "Lütfen bilgileri eksiksiz giriniz."
         }
         else {
-            Transaction.sharedTrans.userName = userNameField.text!
-            Transaction.sharedTrans.amount = Double(amountField.text!)!
-            let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "confirmPage") as! ConfirmController
-            self.present(nextPage, animated: true)
+            
+            Transaction.sharedTrans.userName = self.userNameField.text!
+            Transaction.sharedTrans.amount = Double(self.amountField.text!)!
+
+            
+            self.databaseRef = FIRDatabase.database().reference()
+            self.databaseRef.child("users").child(Transaction.sharedTrans.userName).observeSingleEvent(of: .value, with: { (snapshot) in
+                Transaction.sharedTrans.userNameSurname = (snapshot.value as? NSDictionary)?["name_surname"] as? String ?? ""
+                
+                print(Transaction.sharedTrans.userNameSurname)
+                
+                //MARK: Sending to next page
+                let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "confirmPage") as! ConfirmController
+                self.present(nextPage, animated: true)
+
+            })
+
+            
+            
+
+
         }
     }
     

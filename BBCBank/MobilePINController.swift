@@ -20,7 +20,14 @@ class MobilePINController: UIViewController {
     @IBOutlet weak var PINButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
     
+    @IBOutlet weak var backButton: UIButton!
     //MARK: Actions
+    
+    
+    @IBAction func backClicked(_ sender: UIButton) {
+        let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "loginPage") as! LoginController
+        self.present(nextPage, animated: true)
+    }
     
     @IBAction func GetPINClicked(_ sender: UIButton) {
         

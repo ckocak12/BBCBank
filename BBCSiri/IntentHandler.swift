@@ -20,17 +20,19 @@ import Intents
 // "Search for messages in <myApp>"
 
 
-class IntentHandler: INSendPaymentIntent, INSendPaymentIntentHandling {
+class IntentHandler: INExtension {
     
     
-    func handler(for intent: INIntent) -> Any {
-        // This is the default implementation.  If you want different objects to handle different intents,
-        // you can override this and return the handler you want for that particular intent.
-        
-        return self
+    override func handler(for intent: INIntent) -> Any? {
+        if intent is INSendPaymentIntent {
+            return SendPaymentIntentHandler()
+        }
+        return nil
     }
     
-    func handle(sendPayment intent: INSendPaymentIntent, completion: @escaping (INSendPaymentIntentResponse) -> Void) {
+    
+    
+    func handlerw(sendPayment intent: INSendPaymentIntent, completion: @escaping (INSendPaymentIntentResponse) -> Void) {
         // check that valid values for payee and currencyAmount
         guard let payee = intent.payee, let amount = intent.currencyAmount else {
             return completion(INSendPaymentIntentResponse(code: .unspecified, userActivity: nil))

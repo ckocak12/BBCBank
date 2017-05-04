@@ -23,8 +23,7 @@ class MapController: UIViewController {
         super.viewDidLoad()
         requestLocationAccess()
         addAnnotations()
-       // self.mapView.setUserTrackingMode(MKUserTrackingMode.follow, animated:true)
-        // Do any additional setup after loading the view.
+        self.mapView.setUserTrackingMode(MKUserTrackingMode.follow, animated:true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,29 +53,6 @@ class MapController: UIViewController {
     }
     
     func addAnnotations() {
-        mapView.delegate = self as MKMapViewDelegate
         mapView.addAnnotations(locations)
-        
-       /* let annotation = MKPointAnnotation()
-        annotation.coordinate = CLLocationCoordinate2DMake(41.4567, 29.2345)
-        annotation.title = "My annot"
-        annotation.subtitle = "my annot sub"
-        mapView.addAnnotation(annotation)*/
-    }
-}
-
-extension MapController: MKMapViewDelegate {
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        
-        if annotation is MKUserLocation {
-            return nil
-        }
-            
-        else {
-            let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "annotationView") ?? MKAnnotationView()
-            annotationView.image = UIImage(named:"location_icon")
-            return annotationView
-        }
-        
     }
 }

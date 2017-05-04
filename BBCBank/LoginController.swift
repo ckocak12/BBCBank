@@ -99,6 +99,7 @@ class LoginController: UIViewController, UIApplicationDelegate  {
         if FIRApp.defaultApp() == nil {
             FIRApp.configure()
         }
+        recogizeOutFocus()
         // Ask for Siri permission
         INPreferences.requestSiriAuthorization {
             authorizationStatus in
@@ -109,6 +110,16 @@ class LoginController: UIViewController, UIApplicationDelegate  {
                 print("Not Authorized")
             }
         }
+    }
+    
+    func recogizeOutFocus() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(LoginController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {

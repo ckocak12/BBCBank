@@ -13,6 +13,7 @@ class Transaction {
     static let sharedTrans = Transaction()
 
     var userName = ""
+    var userNameSurname = ""
     var amount = 0.0
     private init() {
     }

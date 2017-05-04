@@ -17,6 +17,8 @@ class ShowMobilePINController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var mobilePINLabel: UILabel!
+    
+    @IBOutlet weak var backButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +34,12 @@ class ShowMobilePINController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func backClicked(_ sender: UIButton) {
+        let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "loginPage") as! LoginController
+        self.present(nextPage, animated: true)
+    }
+    
     
     
 

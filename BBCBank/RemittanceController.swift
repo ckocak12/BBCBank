@@ -51,8 +51,7 @@ class RemittanceController: UIViewController {
             self.databaseRef = FIRDatabase.database().reference()
             self.databaseRef.child("users").child(Transaction.sharedTrans.userName).observeSingleEvent(of: .value, with: { (snapshot) in
                 Transaction.sharedTrans.userNameSurname = (snapshot.value as? NSDictionary)?["name_surname"] as? String ?? ""
-                
-                print(Transaction.sharedTrans.userNameSurname)
+            
                 
                 //MARK: Sending to next page
                 let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "confirmPage") as! ConfirmController

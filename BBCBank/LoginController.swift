@@ -38,6 +38,8 @@ class LoginController: UIViewController, UIApplicationDelegate  {
 //            if User.sharedUser.mobilePIN == -1 {
             if error == nil {
                 //MARK: Creating User from database
+               UserDefaults.standard.set(self.userNameField.text!, forKey: "theUserName")
+                print(UserDefaults.standard.string(forKey: "theUserName"))
                 self.databaseRef = FIRDatabase.database().reference()
                 self.databaseRef.child("users").child(self.userNameField.text!).observeSingleEvent(of: .value, with: { (snapshot) in
                     User.sharedUser.userName = self.userNameField.text!

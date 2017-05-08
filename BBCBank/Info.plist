@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>INGBank</string>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
@@ -37,12 +39,12 @@
 		<string>MKDirectionsModePedestrian</string>
 		<string>MKDirectionsModeStreetCar</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>ATM Bulucu'yu kullanabilmek için konumunuzu etkinleştirmeniz gerekiyor.</string>
 	<key>NSSiriUsageDescription</key>
-	<string>Özellikleri kullanabilmek için Siri&apos;yi etkinleştirin.</string>
+	<string>Özellikleri kullanabilmek için Siri'yi etkinleştirin.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>ATM Bulucu&apos;yu kullanabilmek için konumunuzu etkinleştirmeniz gerekiyor.</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>

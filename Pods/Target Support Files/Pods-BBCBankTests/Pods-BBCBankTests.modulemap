@@ -1,6 +1,0 @@
-framework module Pods_BBCBankTests {
-  umbrella header "Pods-BBCBankTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

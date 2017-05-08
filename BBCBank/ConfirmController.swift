@@ -37,42 +37,42 @@ class ConfirmController: UIViewController {
     }
     
     @IBAction func confirmClicked(_ sender: UIButton) {
-        
-        var balance = 0.0
         let amount = Transaction.sharedTrans.amount
+        let toWhom = Transaction.sharedTrans.userName
+        makeTransfer(to: toWhom, amount: amount)
+    }
+    
+    func makeTransfer(to: String, amount: Double) {
+        
+        let from = User.sharedUser.userName
+        var balance = 0.0
         
         let ref = FIRDatabase.database().reference().child("users")
         
-        let ref1 = ref.child(Transaction.sharedTrans.userName)
-        let ref2 = ref.child(User.sharedUser.userName)
+        let ref1 = ref.child(to)
+        let ref2 = ref.child(from)
         
         ref1.observeSingleEvent(of: .value, with: { (snapshot) in
-           balance = (snapshot.value as? NSDictionary)?["balance"] as? Double ?? 0.0
+            balance = (snapshot.value as? NSDictionary)?["balance"] as? Double ?? 0.0
             print("balance: "+String(balance))
-             let newBalance = balance + amount
-             print("new balance: "+String(newBalance))
+            let newBalance = balance + amount
+            print("new balance: "+String(newBalance))
             
             ref1.child("balance").setValue(newBalance)
-            })
+        })
+        
+        ref2.observeSingleEvent(of: .value, with: { (snapshot) in
+            balance = (snapshot.value as? NSDictionary)?["balance"] as? Double ?? 0.0
+            print("balance: "+String(balance))
+            let newBalance = balance - amount
+            print("new balance: "+String(newBalance))
             
-            ref2.observeSingleEvent(of: .value, with: { (snapshot) in
-                balance = (snapshot.value as? NSDictionary)?["balance"] as? Double ?? 0.0
-                print("balance: "+String(balance))
-                let newBalance = balance - amount
-                print("new balance: "+String(newBalance))
-                
-                ref2.child("balance").setValue(newBalance)
-                User.sharedUser.balance = newBalance
-                
-                let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "success") as! SuccessController
-                self.present(nextPage, animated: true)
-            })
-        
-        
-        
-
-        
-  
+            ref2.child("balance").setValue(newBalance)
+            User.sharedUser.balance = newBalance
+            
+            let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "success") as! SuccessController
+            self.present(nextPage, animated: true)
+        })
     }
     
     @IBAction func backClicked(_ sender: UIButton) {

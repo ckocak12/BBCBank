@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59AB124E8E64E1D14C4FDFF3 /* Pods_BBCSiri.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8726406B092D58FC8B980212 /* Pods_BBCSiri.framework */; };
 		B80337B21E8D93BC00EB618D /* SuccessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80337B11E8D93BC00EB618D /* SuccessController.swift */; };
 		B80337B61E8DBAA500EB618D /* onay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B80337B51E8DBAA500EB618D /* onay.jpg */; };
 		B80C83971E7C4F3900165F0B /* MainPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80C83961E7C4F3900165F0B /* MainPageController.swift */; };
@@ -25,13 +26,15 @@
 		B86199551EA98CD700E23B58 /* ATMLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = B86199541EA98CD700E23B58 /* ATMLocations.plist */; };
 		B86199571EA98DC100E23B58 /* GetLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86199561EA98DC100E23B58 /* GetLocations.swift */; };
 		B861995B1EA9977C00E23B58 /* location_pin.png in Resources */ = {isa = PBXBuildFile; fileRef = B861995A1EA9977C00E23B58 /* location_pin.png */; };
+		B86CBCEE1EBFCAD7001051FD /* ContactFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86CBCED1EBFCAD7001051FD /* ContactFinder.swift */; };
+		B86CBCF01EBFD04F001051FD /* ContactList.plist in Resources */ = {isa = PBXBuildFile; fileRef = B86CBCEF1EBFD04F001051FD /* ContactList.plist */; };
+		B86CBCF21EBFEABB001051FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B86CBCF11EBFEABB001051FD /* GoogleService-Info.plist */; };
 		B8824E651EB9059900A4B4A5 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8824E641EB9059900A4B4A5 /* IntentHandler.swift */; };
 		B8824E6C1EB9059900A4B4A5 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83807DC1E9E8F38006C1FF4 /* IntentsUI.framework */; };
 		B8824E6F1EB9059900A4B4A5 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8824E6E1EB9059900A4B4A5 /* IntentViewController.swift */; };
 		B8824E721EB9059900A4B4A5 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8824E701EB9059900A4B4A5 /* MainInterface.storyboard */; };
 		B8824E761EB9059900A4B4A5 /* BBCSiriUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B8824E6B1EB9059900A4B4A5 /* BBCSiriUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B8824E791EB9059900A4B4A5 /* BBCSiri.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B8824E621EB9059900A4B4A5 /* BBCSiri.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		B8824E821EBBAB6600A4B4A5 /* SendPaymentIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8824E811EBBAB6600A4B4A5 /* SendPaymentIntentHandler.swift */; };
 		B8824E911EBBAE4F00A4B4A5 /* BBCCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8824E881EBBAE4F00A4B4A5 /* BBCCore.framework */; };
 		B8824E981EBBAE4F00A4B4A5 /* BBCCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8824E971EBBAE4F00A4B4A5 /* BBCCoreTests.swift */; };
 		B8824E9A1EBBAE4F00A4B4A5 /* BBCCore.h in Headers */ = {isa = PBXBuildFile; fileRef = B8824E8A1EBBAE4F00A4B4A5 /* BBCCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -45,6 +48,8 @@
 		B8C9256C1EA40F900076D0A2 /* ConfirmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C9256B1EA40F900076D0A2 /* ConfirmController.swift */; };
 		B8C9256E1EA4116C0076D0A2 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C9256D1EA4116C0076D0A2 /* Transaction.swift */; };
 		B8CC28AE1E99777D00BEE377 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = B8CC28AD1E99777D00BEE377 /* line.png */; };
+		B8FE72B91EBC037C00AE19CD /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FE72B81EBC037C00AE19CD /* Contacts.swift */; };
+		B8FE72BF1EBC6E4200AE19CD /* SendPaymentIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FE72BE1EBC6E4200AE19CD /* SendPaymentIntentHandler.swift */; };
 		F5EB48D6D3710F3002179E23 /* Pods_BBCBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29DCD21239E5FC994794031F /* Pods_BBCBank.framework */; };
 /* End PBXBuildFile section */
 
@@ -115,12 +120,15 @@
 /* Begin PBXFileReference section */
 		04C923E9C1F12D8E265CCFC9 /* Pods-BBCBankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBCBankTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BBCBankTests/Pods-BBCBankTests.release.xcconfig"; sourceTree = "<group>"; };
 		07F2AE33E8127EBB1A98AEB5 /* Pods-BBCBankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBCBankTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BBCBankTests/Pods-BBCBankTests.debug.xcconfig"; sourceTree = "<group>"; };
+		172C6811E88118AD864307FE /* Pods-BBCSiri.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBCSiri.release.xcconfig"; path = "Pods/Target Support Files/Pods-BBCSiri/Pods-BBCSiri.release.xcconfig"; sourceTree = "<group>"; };
+		25843E71A4DDBCD5C53583C1 /* Pods-BBCSiri.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBCSiri.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BBCSiri/Pods-BBCSiri.debug.xcconfig"; sourceTree = "<group>"; };
 		29DCD21239E5FC994794031F /* Pods_BBCBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BBCBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		366E869C0AC8BAD965C39BA9 /* Pods-BBCBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBCBank.release.xcconfig"; path = "Pods/Target Support Files/Pods-BBCBank/Pods-BBCBank.release.xcconfig"; sourceTree = "<group>"; };
 		539D66EAD4C62EBEADFE6B3E /* Pods-BBCBankUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBCBankUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BBCBankUITests/Pods-BBCBankUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5F54BBFDF30553E49336FA8C /* Pods_BBCBankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BBCBankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6333E34AE6E28875CBC42DA4 /* Pods-BBCBankUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBCBankUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BBCBankUITests/Pods-BBCBankUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7E3FA709489A1B0A376C44EE /* Pods_BBCBankUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BBCBankUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8726406B092D58FC8B980212 /* Pods_BBCSiri.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BBCSiri.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80337B11E8D93BC00EB618D /* SuccessController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessController.swift; sourceTree = "<group>"; };
 		B80337B51E8DBAA500EB618D /* onay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = onay.jpg; sourceTree = "<group>"; };
 		B80C83961E7C4F3900165F0B /* MainPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageController.swift; sourceTree = "<group>"; };
@@ -147,6 +155,9 @@
 		B86199541EA98CD700E23B58 /* ATMLocations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ATMLocations.plist; sourceTree = "<group>"; };
 		B86199561EA98DC100E23B58 /* GetLocations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetLocations.swift; sourceTree = "<group>"; };
 		B861995A1EA9977C00E23B58 /* location_pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_pin.png; sourceTree = "<group>"; };
+		B86CBCED1EBFCAD7001051FD /* ContactFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactFinder.swift; sourceTree = "<group>"; };
+		B86CBCEF1EBFD04F001051FD /* ContactList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ContactList.plist; sourceTree = "<group>"; };
+		B86CBCF11EBFEABB001051FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B8824E621EB9059900A4B4A5 /* BBCSiri.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BBCSiri.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8824E641EB9059900A4B4A5 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		B8824E661EB9059900A4B4A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -155,7 +166,6 @@
 		B8824E711EB9059900A4B4A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		B8824E731EB9059900A4B4A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8824E801EBA2AFF00A4B4A5 /* BBCSiri.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BBCSiri.entitlements; sourceTree = "<group>"; };
-		B8824E811EBBAB6600A4B4A5 /* SendPaymentIntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendPaymentIntentHandler.swift; sourceTree = "<group>"; };
 		B8824E881EBBAE4F00A4B4A5 /* BBCCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BBCCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8824E8A1EBBAE4F00A4B4A5 /* BBCCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBCCore.h; sourceTree = "<group>"; };
 		B8824E8B1EBBAE4F00A4B4A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -170,6 +180,8 @@
 		B8C9256B1EA40F900076D0A2 /* ConfirmController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmController.swift; sourceTree = "<group>"; };
 		B8C9256D1EA4116C0076D0A2 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		B8CC28AD1E99777D00BEE377 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = line.png; path = BBCBank/line.png; sourceTree = "<group>"; };
+		B8FE72B81EBC037C00AE19CD /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		B8FE72BE1EBC6E4200AE19CD /* SendPaymentIntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendPaymentIntentHandler.swift; sourceTree = "<group>"; };
 		CE403F4799EF360C823852E1 /* Pods-BBCBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBCBank.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BBCBank/Pods-BBCBank.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -189,6 +201,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59AB124E8E64E1D14C4FDFF3 /* Pods_BBCSiri.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +240,7 @@
 				5F54BBFDF30553E49336FA8C /* Pods_BBCBankTests.framework */,
 				7E3FA709489A1B0A376C44EE /* Pods_BBCBankUITests.framework */,
 				B83807DC1E9E8F38006C1FF4 /* IntentsUI.framework */,
+				8726406B092D58FC8B980212 /* Pods_BBCSiri.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -240,6 +254,8 @@
 				04C923E9C1F12D8E265CCFC9 /* Pods-BBCBankTests.release.xcconfig */,
 				6333E34AE6E28875CBC42DA4 /* Pods-BBCBankUITests.debug.xcconfig */,
 				539D66EAD4C62EBEADFE6B3E /* Pods-BBCBankUITests.release.xcconfig */,
+				25843E71A4DDBCD5C53583C1 /* Pods-BBCSiri.debug.xcconfig */,
+				172C6811E88118AD864307FE /* Pods-BBCSiri.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -327,9 +343,12 @@
 			isa = PBXGroup;
 			children = (
 				B8824E801EBA2AFF00A4B4A5 /* BBCSiri.entitlements */,
+				B86CBCF11EBFEABB001051FD /* GoogleService-Info.plist */,
+				B8FE72BE1EBC6E4200AE19CD /* SendPaymentIntentHandler.swift */,
 				B8824E641EB9059900A4B4A5 /* IntentHandler.swift */,
 				B8824E661EB9059900A4B4A5 /* Info.plist */,
-				B8824E811EBBAB6600A4B4A5 /* SendPaymentIntentHandler.swift */,
+				B86CBCED1EBFCAD7001051FD /* ContactFinder.swift */,
+				B86CBCEF1EBFD04F001051FD /* ContactList.plist */,
 			);
 			path = BBCSiri;
 			sourceTree = "<group>";
@@ -348,6 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				B8824E8A1EBBAE4F00A4B4A5 /* BBCCore.h */,
+				B8FE72B81EBC037C00AE19CD /* Contacts.swift */,
 				B8824E8B1EBBAE4F00A4B4A5 /* Info.plist */,
 			);
 			path = BBCCore;
@@ -405,9 +425,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8824E7F1EB9059900A4B4A5 /* Build configuration list for PBXNativeTarget "BBCSiri" */;
 			buildPhases = (
+				092A9FFC44F2BD40D43CFD53 /* [CP] Check Pods Manifest.lock */,
 				B8824E5E1EB9059900A4B4A5 /* Sources */,
 				B8824E5F1EB9059900A4B4A5 /* Frameworks */,
 				B8824E601EB9059900A4B4A5 /* Resources */,
+				6D7B540470BB828143823DB0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -575,6 +597,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B86CBCF01EBFD04F001051FD /* ContactList.plist in Resources */,
+				B86CBCF21EBFEABB001051FD /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,6 +627,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		092A9FFC44F2BD40D43CFD53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		257E77070BC668790B825D9F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -631,6 +670,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BBCBank/Pods-BBCBank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D7B540470BB828143823DB0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BBCSiri/Pods-BBCSiri-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D04B32DF5E5436884FE64C2C /* [CP] Check Pods Manifest.lock */ = {
@@ -676,7 +730,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8824E651EB9059900A4B4A5 /* IntentHandler.swift in Sources */,
-				B8824E821EBBAB6600A4B4A5 /* SendPaymentIntentHandler.swift in Sources */,
+				B86CBCEE1EBFCAD7001051FD /* ContactFinder.swift in Sources */,
+				B8FE72BF1EBC6E4200AE19CD /* SendPaymentIntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,6 +747,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8FE72B91EBC037C00AE19CD /* Contacts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -898,6 +954,7 @@
 		};
 		B8824E7A1EB9059900A4B4A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25843E71A4DDBCD5C53583C1 /* Pods-BBCSiri.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -916,6 +973,7 @@
 		};
 		B8824E7B1EB9059900A4B4A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 172C6811E88118AD864307FE /* Pods-BBCSiri.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1018,6 +1076,7 @@
 		B8824EA41EBBAE4F00A4B4A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				DEVELOPMENT_TEAM = 3673WZYU3N;
 				INFOPLIST_FILE = BBCCoreTests/Info.plist;
@@ -1032,6 +1091,7 @@
 		B8824EA51EBBAE4F00A4B4A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				DEVELOPMENT_TEAM = 3673WZYU3N;
 				INFOPLIST_FILE = BBCCoreTests/Info.plist;

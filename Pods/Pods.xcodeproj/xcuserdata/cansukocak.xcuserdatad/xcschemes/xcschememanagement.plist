@@ -8,36 +8,21 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>GoogleToolboxForMac.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 		<key>Pods-BBCBank.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
-		<key>Pods-BBCBankTests.xcscheme</key>
+		<key>Pods-BBCSiri.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
-		</dict>
-		<key>Pods-BBCBankUITests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>5</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -52,12 +37,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>20084FF38AA647532AF86578625FF3D4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2F844D1C9B1351B5FCA35CE6B5382AF8</key>
+		<key>960357AF7A3B85BBA0ED9F1BD668F9FD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

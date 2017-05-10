@@ -25,7 +25,7 @@ class ConfirmController: UIViewController {
             FIRApp.configure()
         }
         userNameField.text = Transaction.sharedTrans.userNameSurname
-        amount.text = String(Transaction.sharedTrans.amount) + " ₺"
+        amount.text = String(Transaction.sharedTrans.amount) + " $"
         
 
         // Do any additional setup after loading the view.
@@ -38,7 +38,8 @@ class ConfirmController: UIViewController {
     
     @IBAction func confirmClicked(_ sender: UIButton) {
         let amount = Transaction.sharedTrans.amount
-        let toWhom = Transaction.sharedTrans.userName
+        let toWhom = Transaction.sharedTrans.customerNo
+        
         makeTransfer(to: toWhom, amount: amount)
     }
     
@@ -46,6 +47,9 @@ class ConfirmController: UIViewController {
         
         let from = User.sharedUser.userName
         var balance = 0.0
+        
+        print("towhom: "+to)
+        print("from: "+from)
         
         let ref = FIRDatabase.database().reference().child("users")
         

@@ -10,20 +10,22 @@ import Intents
 
 class Contact: NSObject {
     
-    public let nameSurname: String
-    public let userName: String
+    public let name: String
+    public let customerNo: String
+    public let accountNum: String
     
-    public init(nameSurname: String, userName: String) {
-        self.nameSurname = nameSurname
-        self.userName = userName
+    public init(name: String, customerNo: String, accountNum: String) {
+        self.name = name
+        self.customerNo = customerNo
+        self.accountNum = accountNum
     }
 
     static func allContacts() -> [Contact] {
         var contacts = [Contact]()
     
-        contacts.append(Contact.init(nameSurname: "Berika", userName: "bsoyoz"))
-        contacts.append(Contact.init(nameSurname: "Cansu", userName: "ckocak"))
-        contacts.append(Contact.init(nameSurname: "Bihter", userName: "byalta"))
+        contacts.append(Contact.init(name: "Berika", customerNo: "543543", accountNum: "654345632"))
+        contacts.append(Contact.init(name: "Cansu", customerNo: "456789", accountNum: "123456789"))
+        contacts.append(Contact.init(name: "Bihter", customerNo: "567982", accountNum: "987656787"))
         
         return contacts as [Contact]
     }

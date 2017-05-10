@@ -49,7 +49,7 @@
                                         <color key="textColor" red="0.92263883349999998" green="0.4732899793" blue="0.23578841249999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kullanıcı Adınız" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7yj-IK-Wws">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Müşteri Numaranız" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7yj-IK-Wws">
                                         <rect key="frame" x="0.0" y="28.5" width="343" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="TrebuchetMS-Italic" family="Trebuchet MS" pointSize="14"/>
@@ -498,14 +498,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qOu-DS-AnA">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kullanıcı Adı: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ic-9i-t9i">
-                                                <rect key="frame" x="0.0" y="0.0" width="101" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hesap No: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ic-9i-t9i">
+                                                <rect key="frame" x="0.0" y="0.0" width="84.5" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.1084394306" green="0.11191776389999999" blue="0.28638809920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Alıcının kullanıcı adını giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tXR-Nr-tna">
-                                                <rect key="frame" x="111" y="0.0" width="232" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Alıcının hesap numarasını giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tXR-Nr-tna">
+                                                <rect key="frame" x="94.5" y="0.0" width="248.5" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -527,7 +527,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhX-2Z-Sec">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhX-2Z-Sec">
                                                 <rect key="frame" x="330.5" y="0.0" width="12.5" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" red="0.1084394306" green="0.11191776389999999" blue="0.28638809920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -714,7 +714,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="yuD-SA-Uza">
-                                <rect key="frame" x="16" y="164" width="343" height="172"/>
+                                <rect key="frame" x="16" y="164" width="343" height="242"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifre Giriniz" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M1Q-PN-MBG">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
@@ -739,12 +739,21 @@
                                             <action selector="doneClicked:" destination="88y-Jr-nGV" eventType="touchUpInside" id="k8N-jx-mNB"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2f4-9p-DZr">
+                                        <rect key="frame" x="0.0" y="212" width="343" height="30"/>
+                                        <state key="normal" title="Geri"/>
+                                        <connections>
+                                            <action selector="backClicked:" destination="88y-Jr-nGV" eventType="touchUpInside" id="y0j-PI-0Hp"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="cv1-9T-VpI" firstAttribute="leading" secondItem="yuD-SA-Uza" secondAttribute="leading" id="Cbn-o2-cNS"/>
                                     <constraint firstAttribute="trailing" secondItem="fGR-Gz-ogi" secondAttribute="trailing" constant="100" id="Jpw-Ds-Emy"/>
+                                    <constraint firstAttribute="trailing" secondItem="2f4-9p-DZr" secondAttribute="trailing" id="OlX-2O-zcN"/>
                                     <constraint firstItem="fGR-Gz-ogi" firstAttribute="leading" secondItem="yuD-SA-Uza" secondAttribute="leading" constant="100" id="RIx-A6-79g"/>
                                     <constraint firstAttribute="trailing" secondItem="cv1-9T-VpI" secondAttribute="trailing" id="cjT-Li-5P3"/>
+                                    <constraint firstItem="2f4-9p-DZr" firstAttribute="leading" secondItem="yuD-SA-Uza" secondAttribute="leading" id="kZq-5a-SRx"/>
                                     <constraint firstAttribute="trailing" secondItem="M1Q-PN-MBG" secondAttribute="trailing" id="nin-4r-t9Z"/>
                                     <constraint firstItem="M1Q-PN-MBG" firstAttribute="leading" secondItem="yuD-SA-Uza" secondAttribute="leading" id="zkL-58-iHQ"/>
                                 </constraints>
@@ -782,6 +791,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="2f4-9p-DZr" id="klz-sn-qBa"/>
                         <outlet property="doneButton" destination="fGR-Gz-ogi" id="lU4-qg-qIi"/>
                         <outlet property="errorLabel" destination="7J9-yG-z9n" id="y2Z-Wn-hXM"/>
                         <outlet property="logoutButton" destination="IrF-nh-fog" id="R4d-TO-23O"/>

@@ -22,10 +22,13 @@ class MobilePINRegisterController: UIViewController, UIApplicationDelegate {
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var logoutButton: UIButton!
+    
+    @IBOutlet weak var backButton: UIButton!
     //MARK: Page Actions
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        recogizeOutFocus()
         
         // Do any additional setup after loading the view.
     }
@@ -37,6 +40,10 @@ class MobilePINRegisterController: UIViewController, UIApplicationDelegate {
     
     //MARK: Actions
     
+    @IBAction func backClicked(_ sender: UIButton) {
+        let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "mainPage") as! MainPageController
+        self.present(nextPage, animated: true)
+    }
     
     @IBAction func logoutclicked(_ sender: UIButton) {
         
@@ -59,6 +66,15 @@ class MobilePINRegisterController: UIViewController, UIApplicationDelegate {
         
         let nextPage = storyBoardRef.instantiateViewController(withIdentifier: "success")
         present(nextPage, animated: true)
+    }
+    
+    func recogizeOutFocus() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(MobilePINRegisterController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
     /*

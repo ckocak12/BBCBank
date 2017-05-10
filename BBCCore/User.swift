@@ -2,7 +2,7 @@
 //  User.swift
 //  BBCBank
 //
-//  Created by Cansu Koçak on 29/03/2017.
+//  Created by Cansu Koçak on 10/05/2017.
 //  Copyright © 2017 Cansu Koçak. All rights reserved.
 //
 
@@ -12,10 +12,11 @@ class User {
     
     static let sharedUser = User()
     var userName = ""
-    var mobilePIN = -1
     var userNameSurname = ""
     var balance = 0.0
-    var customerNo = 0
+    var customerNo = "null"
+    var accountNo = "null"
+    var mobilePIN = 0
     
     private init() {
     }

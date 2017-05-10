@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import Intents
+import BBCCore
 
 class LoginController: UIViewController, UIApplicationDelegate  {
     
@@ -38,14 +39,15 @@ class LoginController: UIViewController, UIApplicationDelegate  {
 //            if User.sharedUser.mobilePIN == -1 {
             if error == nil {
                 //MARK: Creating User from database
-               UserDefaults.standard.set(self.userNameField.text!, forKey: "theUserName")
-                print(UserDefaults.standard.string(forKey: "theUserName"))
+               UserDefaults.standard.set(self.userNameField.text!, forKey: "theCustomerNum")
                 self.databaseRef = FIRDatabase.database().reference()
                 self.databaseRef.child("users").child(self.userNameField.text!).observeSingleEvent(of: .value, with: { (snapshot) in
                     User.sharedUser.userName = self.userNameField.text!
-                    User.sharedUser.customerNo = (snapshot.value as? NSDictionary)?["customer_no"] as? Int ?? 0
+                    User.sharedUser.customerNo = String(describing: (snapshot.value as? NSDictionary)?["customer_no"] as? Int ?? 0)
                     User.sharedUser.balance = (snapshot.value as? NSDictionary)?["balance"] as? Double ?? 0
                     User.sharedUser.userNameSurname = (snapshot.value as? NSDictionary)?["name_surname"] as? String ?? ""
+                    
+                    UserDefaults.standard.set(User.sharedUser.balance, forKey: "theBalance")
                     
                     //MARK: Sending to next page
                     let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "mainPage") as! MainPageController

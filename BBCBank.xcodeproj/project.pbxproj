@@ -26,6 +26,7 @@
 		B86199551EA98CD700E23B58 /* ATMLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = B86199541EA98CD700E23B58 /* ATMLocations.plist */; };
 		B86199571EA98DC100E23B58 /* GetLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86199561EA98DC100E23B58 /* GetLocations.swift */; };
 		B861995B1EA9977C00E23B58 /* location_pin.png in Resources */ = {isa = PBXBuildFile; fileRef = B861995A1EA9977C00E23B58 /* location_pin.png */; };
+		B867DD1A1EC39E3E00982B8C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B867DD191EC39E3E00982B8C /* User.swift */; };
 		B86CBCEE1EBFCAD7001051FD /* ContactFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86CBCED1EBFCAD7001051FD /* ContactFinder.swift */; };
 		B86CBCF01EBFD04F001051FD /* ContactList.plist in Resources */ = {isa = PBXBuildFile; fileRef = B86CBCEF1EBFD04F001051FD /* ContactList.plist */; };
 		B86CBCF21EBFEABB001051FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B86CBCF11EBFEABB001051FD /* GoogleService-Info.plist */; };
@@ -155,6 +156,7 @@
 		B86199541EA98CD700E23B58 /* ATMLocations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ATMLocations.plist; sourceTree = "<group>"; };
 		B86199561EA98DC100E23B58 /* GetLocations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetLocations.swift; sourceTree = "<group>"; };
 		B861995A1EA9977C00E23B58 /* location_pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_pin.png; sourceTree = "<group>"; };
+		B867DD191EC39E3E00982B8C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B86CBCED1EBFCAD7001051FD /* ContactFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactFinder.swift; sourceTree = "<group>"; };
 		B86CBCEF1EBFD04F001051FD /* ContactList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ContactList.plist; sourceTree = "<group>"; };
 		B86CBCF11EBFEABB001051FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -368,6 +370,7 @@
 			children = (
 				B8824E8A1EBBAE4F00A4B4A5 /* BBCCore.h */,
 				B8FE72B81EBC037C00AE19CD /* Contacts.swift */,
+				B867DD191EC39E3E00982B8C /* User.swift */,
 				B8824E8B1EBBAE4F00A4B4A5 /* Info.plist */,
 			);
 			path = BBCCore;
@@ -747,6 +750,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B867DD1A1EC39E3E00982B8C /* User.swift in Sources */,
 				B8FE72B91EBC037C00AE19CD /* Contacts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

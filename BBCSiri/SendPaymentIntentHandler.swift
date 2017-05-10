@@ -23,30 +23,39 @@ class SendPaymentIntentHandler: NSObject, INSendPaymentIntentHandling {
         
         let payee = intent.payee
         let contacts = Contact.allContacts()
-        var theContact = Contact.init(nameSurname: "", userName: "")
+        var theContact = Contact.init(name: "", customerNo: "", accountNum: "")
         var userFound = false
         
         for c in contacts {
-            if c.nameSurname == payee?.displayName {
+            if c.name == payee?.displayName {
                 theContact = c
                 userFound = true
             }
         }
         
-        print(userFound)
         if !userFound {
              completion(INSendPaymentIntentResponse.init(code: .failureRequiringAppLaunch, userActivity: nil))
         }
             
         else {
-            let to = theContact.userName
-           // let from = UserDefaults.standard.string(forKey: "theUserName")
-            let from = "ckocak"
-            let amount = intent.currencyAmount?.amount as! Double
-            print(from)
+            let to = theContact.customerNo
+            print(UserDefaults.standard.double(forKey: "theBalance"))
+            print(UserDefaults.standard.object(forKey: "theCustomerNum") as! String)
+            print(intent.currencyAmount?.amount! as! Double)
+            
+            let balance = UserDefaults.standard.double(forKey: "theBalance")
+            let from = UserDefaults.standard.object(forKey: "theCustomerNum") as! String
+            let amount = intent.currencyAmount?.amount! as! Double
+
             if amount <= paymentThreshold {
-            makeTransfer(to: to, from: from, amount: amount)
-            completion(INSendPaymentIntentResponse.init(code: .success, userActivity: nil))
+                if amount > balance {
+                    completion(INSendPaymentIntentResponse.init(code: .failureInsufficientFunds, userActivity: nil))
+                }
+                else {
+                    makeTransfer(to: to, from: from, amount: amount)
+                    completion(INSendPaymentIntentResponse.init(code: .success, userActivity: nil))
+                }
+
             }
             else {
                 completion(INSendPaymentIntentResponse.init(code: .failurePaymentsAmountAboveMaximum, userActivity: nil))
@@ -54,6 +63,8 @@ class SendPaymentIntentHandler: NSObject, INSendPaymentIntentHandling {
         }
         
     }
+    
+    
 
     func makeTransfer(to: String, from: String, amount: Double) {
         var balance = 0.0

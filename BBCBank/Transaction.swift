@@ -12,7 +12,8 @@ class Transaction {
 
     static let sharedTrans = Transaction()
 
-    var userName = ""
+    var accountNo = ""
+    var customerNo = ""
     var userNameSurname = ""
     var amount = 0.0
     private init() {

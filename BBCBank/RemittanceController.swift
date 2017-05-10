@@ -22,7 +22,8 @@ class RemittanceController: UIViewController {
     let theUser = User.sharedUser
     let transaction = Transaction.sharedTrans
     let storyBoardRef = UIStoryboard(name: "Main", bundle: nil)
-    var databaseRef: FIRDatabaseReference!
+    var usersDatabaseRef: FIRDatabaseReference!
+    var accountsDatabaseRef: FIRDatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,32 +37,39 @@ class RemittanceController: UIViewController {
     }
     
     @IBAction func continueClicked(_ sender: UIButton) {
-        
+        let amount = Double(amountField.text!)
         
         
         if userNameField.text! == "" || amountField.text! == "" {
             errorLabel.text = "Lütfen bilgileri eksiksiz giriniz."
         }
+        else if amount!>User.sharedUser.balance{
+            errorLabel.text = "Bu tutar gönderebileceğiniz miktarın üzerinde."
+        }
         else {
-            
-            Transaction.sharedTrans.userName = self.userNameField.text!
+
+            Transaction.sharedTrans.accountNo = self.userNameField.text!
             Transaction.sharedTrans.amount = Double(self.amountField.text!)!
-
             
-            self.databaseRef = FIRDatabase.database().reference()
-            self.databaseRef.child("users").child(Transaction.sharedTrans.userName).observeSingleEvent(of: .value, with: { (snapshot) in
-                Transaction.sharedTrans.userNameSurname = (snapshot.value as? NSDictionary)?["name_surname"] as? String ?? ""
-            
+            self.accountsDatabaseRef = FIRDatabase.database().reference().child("accounts")
+            self.accountsDatabaseRef.observeSingleEvent(of: .value, with: { (snapshot) in
+                Transaction.sharedTrans.customerNo = String(describing: (snapshot.value as? NSDictionary)?[Transaction.sharedTrans.accountNo] as? Int ?? -1)
                 
-                //MARK: Sending to next page
-                let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "confirmPage") as! ConfirmController
-                self.present(nextPage, animated: true)
+                if Transaction.sharedTrans.customerNo == "-1" {
+                    self.errorLabel.text = "Bu hesap bulunamadı."
+                }
+                else {
+                    self.usersDatabaseRef = FIRDatabase.database().reference().child("users")
+                    self.usersDatabaseRef.child(Transaction.sharedTrans.customerNo).observeSingleEvent(of: .value, with: { (snapshot) in
+                        Transaction.sharedTrans.userNameSurname = (snapshot.value as? NSDictionary)?["name_surname"] as? String ?? ""
+                        
+                        //MARK: Sending to next page
+                        let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "confirmPage") as! ConfirmController
+                        self.present(nextPage, animated: true)
+                    })
+                }
 
-            })
-
-            
-            
-
+                })
 
         }
     }
@@ -70,6 +78,7 @@ class RemittanceController: UIViewController {
         let nextPage = self.storyBoardRef.instantiateViewController(withIdentifier: "mainPage") as! MainPageController
         self.present(nextPage, animated: true)
     }
+    
     
  /*   override func restoreUserActivityState(_ activity: NSUserActivity) {
         let payee = activity.userInfo?["payee"] as! String

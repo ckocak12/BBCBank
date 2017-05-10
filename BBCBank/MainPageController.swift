@@ -39,7 +39,7 @@ class MainPageController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         UserNameSurname.text = self.theUser.userNameSurname
-        userBalance.text = String(describing: self.theUser.balance) + " ₺"
+        userBalance.text = String(describing: self.theUser.balance) + " $"
         customerNo.text = String(self.theUser.customerNo)
     }
 
